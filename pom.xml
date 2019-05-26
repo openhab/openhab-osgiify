@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.openhab.osgiify</groupId>
+  <artifactId>org.openhab.reactor.osgiify</artifactId>
+  <version>2.5.0-SNAPSHOT</version>
+
+  <packaging>pom</packaging>
+
+  <name>openHAB :: OSGi-ify</name>
+  <description>This project contains OSGi-ified versions of openHAB dependencies</description>
+
+  <organization>
+    <name>openHAB.org</name>
+    <url>http://www.openhab.org</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>Eclipse Public License 2.0</name>
+      <url>https://www.eclipse.org/legal/epl-2.0/</url>
+    </license>
+  </licenses>
+
+  <modules>
+    <module>com.github.calimero.calimero-core</module>
+    <module>com.github.calimero.calimero-device</module>
+    <module>de.kaizencode.tchaikovsky</module>
+  </modules>
+
+  <scm>
+    <connection>scm:git:https://github.com/openhab/openhab-osgiify.git</connection>
+    <developerConnection>scm:git:https://github.com/J-N-K/openhab-osgiify.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/J-N-K/openhab-osgiify</url>
+  </scm>
+
+  <issueManagement>
+    <system>Github</system>
+    <url>https://github.com/J-N-K/openhab-osgiify/issues</url>
+  </issueManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <oh.java.version>1.8</oh.java.version>
+    <maven.compiler.source>${oh.java.version}</maven.compiler.source>
+    <maven.compiler.target>${oh.java.version}</maven.compiler.target>
+    <maven.compiler.compilerVersion>${oh.java.version}</maven.compiler.compilerVersion>
+
+    <bnd.version>4.2.0</bnd.version>
+  </properties>
+
+  <repositories>
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>jcenter</id>
+      <name>JCenter Repository</name>
+      <url>https://jcenter.bintray.com</url>
+    </repository>
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>openhab-artifactory-release</id>
+      <name>JFrog Artifactory Repository</name>
+      <url>https://openhab.jfrog.io/openhab/libs-release</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>jcenter</id>
+      <url>https://jcenter.bintray.com</url>
+    </pluginRepository>
+    <pluginRepository>
+      <id>openhab-artifactory-release</id>
+      <url>https://openhab.jfrog.io/openhab/libs-release</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <distributionManagement>  
+    <repository>
+      <id>internal.repo</id>
+      <name>My Repo</name>
+      <url>file://c:/testrepo</url>
+    </repository>
+  </distributionManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <configuration>
+            <archive>
+              <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+            </archive>
+            <skipIfEmpty>true</skipIfEmpty>
+          </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>unpack-dependencies</id>
+              <goals>
+                <goal>unpack</goal>
+              </goals>
+              <configuration>
+                <artifactItems>
+                  <artifactItem>
+                    <groupId>${origin.groupId}</groupId>
+                    <artifactId>${origin.artifactId}</artifactId>
+                    <version>${project.version}</version>
+                    <type>jar</type>
+                    <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+                    <overWrite>true</overWrite>
+                  </artifactItem>
+                </artifactItems>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>biz.aQute.bnd</groupId>
+        <artifactId>bnd-maven-plugin</artifactId>
+        <version>${bnd.version}</version>
+        <configuration>
+          <bndfile>osgi.bnd</bndfile>
+          <bnd><![CDATA[
+-removeheaders: Bnd-LastModified, \\
+  Built-By, \\
+  Tool, \\
+  Archiver-Version, \\
+  Created-By, \\
+  Build-Jdk
+Automatic-Module-Name: ${def;bsn}
+Bundle-SymbolicName: ${project.artifactId}
+Bundle-Version: ${project.version}]]></bnd>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>bnd-process</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <profiles>
+    <profile>
+      <id>local-library</id>
+      <activation>
+        <file>
+          <exists>lib/</exists>
+        </file>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <artifactId>maven-dependency-plugin</artifactId>
+              <executions>
+                <execution>
+                  <id>unpack-dependencies</id>
+                  <phase>none</phase>
+                </execution>
+              </executions>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+  </profiles>
+  
+</project>

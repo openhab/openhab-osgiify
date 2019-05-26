@@ -6,4 +6,5 @@
 .metadata/
 bin/
 target/
+temp/
 !*.dll

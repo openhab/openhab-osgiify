@@ -27,6 +27,7 @@
   <modules>
     <module>com.github.calimero.calimero-core</module>
     <module>com.github.calimero.calimero-device</module>
+    <module>com.github.calimero.calimero-rxtx</module>
     <module>de.kaizencode.tchaikovsky</module>
   </modules>
 

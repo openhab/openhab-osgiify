@@ -104,6 +104,19 @@
     <pluginManagement>
       <plugins>
         <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+          <executions>
+            <execution>
+              <id>auto-clean</id>
+              <phase>initialize</phase>
+              <goals>
+                <goal>clean</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>      
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
           <configuration>
@@ -166,31 +179,5 @@ Bundle-Version: ${project.version}]]></bnd>
       </plugin>
     </plugins>
   </build>
-  
-  <profiles>
-    <profile>
-      <id>local-library</id>
-      <activation>
-        <file>
-          <exists>lib/</exists>
-        </file>
-      </activation>
-      <build>
-        <pluginManagement>
-          <plugins>
-            <plugin>
-              <artifactId>maven-dependency-plugin</artifactId>
-              <executions>
-                <execution>
-                  <id>unpack-dependencies</id>
-                  <phase>none</phase>
-                </execution>
-              </executions>
-            </plugin>
-          </plugins>
-        </pluginManagement>
-      </build>
-    </profile>
-  </profiles>
   
 </project>

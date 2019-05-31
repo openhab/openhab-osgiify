@@ -9,9 +9,22 @@
     <version>2.5.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>de.kaizencode.tchaikovsky</artifactId>
-  <version>0.0.1</version>
+  <artifactId>org.pcap4j.pcap4j-core</artifactId>
+  <version>1.6.6</version>
 
-  <name>openHAB :: OSGi-ify :: Tchaikovsky Allplay</name>
+  <name>openHAB :: OSGi-ify :: Pcap4J Core</name>
+
+  <properties>
+    <origin.groupId>org.pcap4j</origin.groupId>
+    <origin.artifactId>pcap4j-core</origin.artifactId>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-dependency-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>

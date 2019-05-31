@@ -1,6 +1,6 @@
-Bundle-Description: OSGi-ified version of Calimero Device Library
-Bundle-Name: Calimero Device Library
-Bundle-License: GPL v2
+Bundle-Description: OSGi-ified version of Pcap4J Packetfactory Static
+Bundle-Name: Pcap4J Packetfactory Static
+Bundle-License: MIT License
 Bundle-Version: ${project.version}
 Import-Package: \\
   *
@@ -9,4 +9,3 @@ Export-Package: \\
   *;version=${project.version}
 -includeresource: \\
   NOTICE
-

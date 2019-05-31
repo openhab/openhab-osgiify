@@ -28,7 +28,12 @@
     <module>com.github.calimero.calimero-core</module>
     <module>com.github.calimero.calimero-device</module>
     <module>com.github.calimero.calimero-rxtx</module>
-    <module>de.kaizencode.tchaikovsky</module>
+    <module>de.zazaz.iot.bosch.indego.bosch-indego-controller-lib</module>
+    <module>org.apache.ftpserver.ftplet-api</module>
+    <module>org.apache.ftpserver.ftpserver-core</module>
+    <module>org.apache.mina.mina-core</module>
+    <module>org.pcap4j.pcap4j-core</module>
+    <module>org.pcap4j.pcap4j-packetfactory-static</module>
   </modules>
 
   <scm>
@@ -166,8 +171,7 @@
   Created-By, \\
   Build-Jdk
 Automatic-Module-Name: ${def;bsn}
-Bundle-SymbolicName: ${project.artifactId}
-Bundle-Version: ${project.version}]]></bnd>
+Bundle-SymbolicName: ${project.artifactId}]]></bnd>
         </configuration>
         <executions>
           <execution>

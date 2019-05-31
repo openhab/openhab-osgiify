@@ -1,6 +1,6 @@
-Bundle-Description: OSGi-ified version of Calimero Device Library
-Bundle-Name: Calimero Device Library
-Bundle-License: GPL v2
+Bundle-Description: OSGi-ified version of Apache MINA Core
+Bundle-Name: Apache MINA Core
+Bundle-License: Apache 2.0 License
 Bundle-Version: ${project.version}
 Import-Package: \\
   *
@@ -9,4 +9,3 @@ Export-Package: \\
   *;version=${project.version}
 -includeresource: \\
   NOTICE
-

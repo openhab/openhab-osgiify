@@ -1,6 +1,7 @@
 Bundle-Description: OSGi-ified version of Calimero Core Library
 Bundle-Name: Calimero Core Library
 Bundle-License: GPL v2
+Bundle-Version: ${project.version}
 Import-Package: \\
   javax.microedition.io.*;resolution:="optional", \\
   javax.usb.*;resolution:="optional", \\

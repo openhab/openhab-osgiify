@@ -14,12 +14,7 @@ https://github.com/J-N-K/openhab-osgiify
 
 == Third-party Content
 
-tchaikovsky
+bosch-indego-controller
 * License: Apache 2.0 License
-* Project: https://github.com/dominicdesu/tchaikovsky
-* Source:  https://github.com/dominicdesu/tchaikovsky
-
-liballjoyn
-* License: ISC License
-* Project: https://github.com/alljoyn/alljoyn.github.com/wiki
-* Source:  https://github.com/alljoyn
+* Project: https://github.com/zazaz-de/iot-device-bosch-indego-controller
+* Source:  https://github.com/zazaz-de/iot-device-bosch-indego-controller

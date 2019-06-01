@@ -25,17 +25,25 @@
   </licenses>
 
   <modules>
+    <module>com.firebase.tubesock</module>
     <module>com.github.calimero.calimero-core</module>
     <module>com.github.calimero.calimero-device</module>
     <module>com.github.calimero.calimero-rxtx</module>
     <module>com.google.http-client.google-http-client-gson</module>
+    <module>com.pi4j.pi4j-gpio-extension</module>
+    <module>com.squareup.okhttp.okhttp</module>
+    <module>com.squareup.okio.okio</module>
+    <module>com.squareup.retrofit.retrofit</module>
     <module>de.zazaz.iot.bosch.indego.bosch-indego-controller-lib</module>
+    <module>fr.bmartel.http-endec</module>
+    <module>fr.bmartel.jspeedtest</module>
     <module>org.apache.ftpserver.ftplet-api</module>
     <module>org.apache.ftpserver.ftpserver-core</module>
     <module>org.apache.mina.mina-core</module>
     <module>org.cups4j.cups4j</module>
     <module>org.java-websocket.java-websocket</module>
-    <module>org.json.json</module>
+    <module>org.json.json-20131018</module>
+    <module>org.json.json-20140107</module>
     <module>org.pcap4j.pcap4j-core</module>
     <module>org.pcap4j.pcap4j-packetfactory-static</module>
     <module>xpp3.xpp3</module>
@@ -56,11 +64,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <oh.java.version>1.8</oh.java.version>
-    <maven.compiler.source>${oh.java.version}</maven.compiler.source>
-    <maven.compiler.target>${oh.java.version}</maven.compiler.target>
-    <maven.compiler.compilerVersion>${oh.java.version}</maven.compiler.compilerVersion>
-
     <bnd.version>4.2.0</bnd.version>
   </properties>
 

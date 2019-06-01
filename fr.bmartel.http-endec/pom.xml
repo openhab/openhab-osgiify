@@ -9,14 +9,14 @@
     <version>2.5.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>org.json.json</artifactId>
-  <version>20140107</version>
+  <artifactId>fr.bmartel.http-endec</artifactId>
+  <version>1.04</version>
 
-  <name>openHAB :: OSGi-ify :: JSON in Java</name>
+  <name>openHAB :: OSGi-ify :: HTTP Encoder/Decoder</name>
 
   <properties>
-    <origin.groupId>org.json</origin.groupId>
-    <origin.artifactId>json</origin.artifactId>
+    <origin.groupId>fr.bmartel</origin.groupId>
+    <origin.artifactId>http-endec</origin.artifactId>
   </properties>
 
 </project>

@@ -1,0 +1,12 @@
+Bundle-Description: OSGi-ified version of Pi4J (Extension)
+Bundle-Name: Pi4J (Extension)
+Bundle-License: LGPL 3.0 License
+Bundle-Version: ${project.version}
+Import-Package: \\
+  *
+Export-Package: \\
+  !NOTICE, \\
+  *;version=${project.version}
+-includeresource: \\
+  NOTICE
+

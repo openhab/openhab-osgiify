@@ -1,0 +1,12 @@
+Bundle-Description: OSGi-ified version of HTTP Encoder/Decoder
+Bundle-Name: HTTP Encoder/Decoder
+Bundle-License: MIT License
+Bundle-Version: ${project.version}
+Import-Package: \\
+  *
+Export-Package: \\
+  !NOTICE, \\
+  *;version=${project.version}
+-includeresource: \\
+  NOTICE
+

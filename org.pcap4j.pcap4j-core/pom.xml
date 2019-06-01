@@ -19,12 +19,4 @@
     <origin.artifactId>pcap4j-core</origin.artifactId>
   </properties>
 
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-dependency-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
-
 </project>

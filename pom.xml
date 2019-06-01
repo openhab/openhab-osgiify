@@ -28,12 +28,17 @@
     <module>com.github.calimero.calimero-core</module>
     <module>com.github.calimero.calimero-device</module>
     <module>com.github.calimero.calimero-rxtx</module>
+    <module>com.google.http-client.google-http-client-gson</module>
     <module>de.zazaz.iot.bosch.indego.bosch-indego-controller-lib</module>
     <module>org.apache.ftpserver.ftplet-api</module>
     <module>org.apache.ftpserver.ftpserver-core</module>
     <module>org.apache.mina.mina-core</module>
+    <module>org.cups4j.cups4j</module>
+    <module>org.java-websocket.java-websocket</module>
+    <module>org.json.json</module>
     <module>org.pcap4j.pcap4j-core</module>
     <module>org.pcap4j.pcap4j-packetfactory-static</module>
+    <module>xpp3.xpp3</module>
   </modules>
 
   <scm>
@@ -146,6 +151,30 @@
           </executions>
         </plugin>
         <plugin>
+          <groupId>biz.aQute.bnd</groupId>
+          <artifactId>bnd-maven-plugin</artifactId>
+          <version>${bnd.version}</version>
+          <configuration>
+            <bndfile>osgi.bnd</bndfile>
+            <bnd><![CDATA[
+-removeheaders: Bnd-LastModified, \\
+  Built-By, \\
+  Tool, \\
+  Archiver-Version, \\
+  Created-By, \\
+  Build-Jdk
+Automatic-Module-Name: ${def;bsn}
+Bundle-SymbolicName: ${project.artifactId}]]></bnd>
+          </configuration>
+          <executions>
+            <execution>
+              <goals>
+                <goal>bnd-process</goal>
+               </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
           <configuration>
@@ -193,33 +222,6 @@
         </plugin>
       </plugins>
     </pluginManagement>
-
-    <plugins>
-      <plugin>
-        <groupId>biz.aQute.bnd</groupId>
-        <artifactId>bnd-maven-plugin</artifactId>
-        <version>${bnd.version}</version>
-        <configuration>
-          <bndfile>osgi.bnd</bndfile>
-          <bnd><![CDATA[
--removeheaders: Bnd-LastModified, \\
-  Built-By, \\
-  Tool, \\
-  Archiver-Version, \\
-  Created-By, \\
-  Build-Jdk
-Automatic-Module-Name: ${def;bsn}
-Bundle-SymbolicName: ${project.artifactId}]]></bnd>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>bnd-process</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
   </build>
   
   <profiles>
@@ -231,11 +233,15 @@ Bundle-SymbolicName: ${project.artifactId}]]></bnd>
         </file>
       </activation>
       <build>
-          <plugins>
-            <plugin>
-              <artifactId>maven-dependency-plugin</artifactId>
-            </plugin>
-          </plugins>
+        <plugins>
+          <plugin>
+            <artifactId>maven-dependency-plugin</artifactId>
+          </plugin>
+          <plugin>
+            <groupId>biz.aQute.bnd</groupId>
+            <artifactId>bnd-maven-plugin</artifactId>
+          </plugin>
+        </plugins>
       </build>
     </profile>
   </profiles>

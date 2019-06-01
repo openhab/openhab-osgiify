@@ -1,6 +1,6 @@
-Bundle-Description: OSGi-ified version of Calimero Device Library
-Bundle-Name: Calimero Device Library
-Bundle-License: GPL v2 License
+Bundle-Description: OSGi-ified version of CUPS4J
+Bundle-Name: CUPS4J
+Bundle-License: LGPL 3.0 License
 Bundle-Version: ${project.version}
 Import-Package: \\
   *

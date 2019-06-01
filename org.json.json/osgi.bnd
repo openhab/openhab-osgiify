@@ -1,6 +1,6 @@
-Bundle-Description: OSGi-ified version of Calimero Device Library
-Bundle-Name: Calimero Device Library
-Bundle-License: GPL v2 License
+Bundle-Description: OSGi-ified version of JSON in Java
+Bundle-Name: JSON in Java
+Bundle-License: JSON License
 Bundle-Version: ${project.version}
 Import-Package: \\
   *

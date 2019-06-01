@@ -1,0 +1,12 @@
+Bundle-Description: OSGi-ified version of GSON Extensions to The Google HTTP Client Library For Java
+Bundle-Name: GSON Extensions 
+Bundle-License: Apache License 2.0
+Bundle-Version: ${project.version}
+Import-Package: \\
+  *
+Export-Package: \\
+  !NOTICE, \\
+  *;version=${project.version}
+-includeresource: \\
+  NOTICE
+

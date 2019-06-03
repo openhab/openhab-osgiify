@@ -1,0 +1,12 @@
+Bundle-Description: OSGi-ified version of ECC 25519
+Bundle-Name: ECC 25519
+Bundle-License: Apache 2.0 License
+Bundle-Version: ${project.version}
+Import-Package: \\
+  *
+Export-Package: \\
+  !NOTICE, \\
+  *;version=${project.version}
+-includeresource: \\
+  NOTICE
+

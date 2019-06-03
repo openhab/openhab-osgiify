@@ -139,9 +139,11 @@
         </plugin>
         <plugin>
           <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.0.0</version>
           <executions>
+            <!-- unpack dependency -->
             <execution>
-              <id>unpack-dependencies</id>
+              <id>unpack-dependency</id>
               <goals>
                 <goal>unpack</goal>
               </goals>
@@ -156,6 +158,28 @@
                     <overWrite>true</overWrite>
                   </artifactItem>
                 </artifactItems>
+              </configuration>
+            </execution>
+            <!-- copy sources -->
+            <execution>
+              <id>copy-sources</id>
+              <goals>
+                <goal>copy</goal>
+              </goals>
+              <configuration>
+                <artifactItems>
+                  <artifactItem>
+                    <groupId>${origin.groupId}</groupId>
+                    <artifactId>${origin.artifactId}</artifactId>
+                    <version>${project.version}</version>
+                    <type>jar</type>
+                    <classifier>sources</classifier>
+                    <outputDirectory>${project.build.directory}</outputDirectory>
+                    <destFileName>${project.groupId}-${project.artifactId}-${project.version}-sources.jar</destFileName>
+                    <overWrite>true</overWrite>
+                  </artifactItem>
+                </artifactItems>
+                <failOnError>false</failOnError>
               </configuration>
             </execution>
           </executions>
@@ -181,6 +205,30 @@ Bundle-SymbolicName: ${project.artifactId}]]></bnd>
               <goals>
                 <goal>bnd-process</goal>
                </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <!-- attach sources -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>1.12</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <phase>package</phase>
+              <goals>
+                <goal>attach-artifact</goal>
+              </goals>
+              <configuration>
+                <artifacts>
+                  <artifact>
+                    <file>${project.build.directory}/${project.groupId}-${project.artifactId}-${project.version}-sources.jar</file>
+                    <type>jar</type>
+                    <classifier>sources</classifier>
+                  </artifact>
+                </artifacts>
+              </configuration>
             </execution>
           </executions>
         </plugin>
@@ -236,7 +284,7 @@ Bundle-SymbolicName: ${project.artifactId}]]></bnd>
   
   <profiles>
     <profile>
-      <id>unpack-dependencies</id>
+      <id>from-standard-repository</id>
       <activation>
         <file>
           <exists>osgi.bnd</exists>
@@ -250,6 +298,10 @@ Bundle-SymbolicName: ${project.artifactId}]]></bnd>
           <plugin>
             <groupId>biz.aQute.bnd</groupId>
             <artifactId>bnd-maven-plugin</artifactId>
+          </plugin>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
           </plugin>
         </plugins>
       </build>

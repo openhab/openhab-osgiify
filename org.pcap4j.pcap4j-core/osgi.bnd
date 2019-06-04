@@ -1,5 +1,5 @@
-Bundle-Description: OSGi-ified version of Pcap4J Packetfactory Static
-Bundle-Name: Pcap4J Packetfactory Static
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
 Bundle-License: MIT License
 Bundle-Version: ${project.version}
 Import-Package: \\

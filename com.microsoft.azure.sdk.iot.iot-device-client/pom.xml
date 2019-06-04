@@ -12,7 +12,7 @@
   <artifactId>com.microsoft.azure.sdk.iot.iot-device-client</artifactId>
   <version>1.2.27</version>
 
-  <name>openHAB :: OSGi-ify :: Azure IoT Hub Device Client</name>
+  <name>Azure IoT Hub Device Client</name>
 
   <properties>
     <origin.groupId>com.microsoft.azure.sdk.iot</origin.groupId>

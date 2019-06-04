@@ -1,5 +1,5 @@
-Bundle-Description: OSGi-ified version of OK I/O Library
-Bundle-Name: OK I/O Library
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
 Bundle-License: Apache 2.0 License
 Bundle-Version: ${project.version}
 Import-Package: \\
@@ -9,4 +9,3 @@ Export-Package: \\
   *;version=${project.version}
 -includeresource: \\
   NOTICE
-

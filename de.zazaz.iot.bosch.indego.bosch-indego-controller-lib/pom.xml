@@ -12,7 +12,7 @@
   <artifactId>de.zazaz.iot.bosch.indego.bosch-indego-controller-lib</artifactId>
   <version>0.8</version>
 
-  <name>openHAB :: OSGi-ify :: Bosch Indego</name>
+  <name>Bosch Indego</name>
 
   <properties>
     <origin.groupId>de.zazaz.iot.bosch.indego</origin.groupId>

@@ -12,7 +12,7 @@
   <artifactId>com.github.calimero.calimero-device</artifactId>
   <version>2.4</version>
 
-  <name>openHAB :: OSGi-ify :: Calimero Device</name>
+  <name>Calimero Device</name>
 
   <properties>
     <origin.groupId>com.github.calimero</origin.groupId>

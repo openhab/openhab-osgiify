@@ -12,7 +12,7 @@
   <artifactId>fr.bmartel.http-endec</artifactId>
   <version>1.04</version>
 
-  <name>openHAB :: OSGi-ify :: HTTP Encoder/Decoder</name>
+  <name>HTTP Encoder/Decoder</name>
 
   <properties>
     <origin.groupId>fr.bmartel</origin.groupId>

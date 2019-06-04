@@ -12,7 +12,7 @@
   <artifactId>org.zeromq.curve25519-java</artifactId>
   <version>0.1.0</version>
 
-  <name>openHAB :: OSGi-ify :: Curve25519 Java</name>
+  <name>Curve25519 Java</name>
 
   <properties>
     <origin.groupId>org.zeromq</origin.groupId>

@@ -12,7 +12,7 @@
   <artifactId>com.squareup.okio.okio</artifactId>
   <version>1.3.0</version>
 
-  <name>openHAB :: OSGi-ify :: OK I/O Library</name>
+  <name>OK I/O</name>
 
   <properties>
     <origin.groupId>com.squareup.okio</origin.groupId>

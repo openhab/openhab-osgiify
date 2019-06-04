@@ -1,5 +1,5 @@
-Bundle-Description: OSGi-ified version of JSON in Java
-Bundle-Name: JSON in Java
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
 Bundle-License: JSON License
 Bundle-SymbolicName: org.json.json
 Bundle-Version: ${project.version}
@@ -10,4 +10,3 @@ Export-Package: \\
   *;version=${project.version}
 -includeresource: \\
   NOTICE
-

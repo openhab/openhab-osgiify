@@ -12,7 +12,7 @@
   <artifactId>io.netty.netty-all</artifactId>
   <version>4.0.32.Final</version>
 
-  <name>openHAB :: OSGi-ify :: Netty/All In One</name>
+  <name>Netty/All In One</name>
 
   <properties>
     <origin.groupId>io.netty</origin.groupId>

@@ -12,7 +12,7 @@
   <artifactId>de.kaizencode.tchaikovsky</artifactId>
   <version>0.0.1</version>
 
-  <name>openHAB :: OSGi-ify :: Tchaikovsky Allplay</name>
+  <name>Tchaikovsky Allplay</name>
 
   <properties>
     <origin.groupId>de.kaizencode</origin.groupId>

@@ -1,5 +1,5 @@
-Bundle-Description: OSGi-ified version of Azure IoT Hub Service Client
-Bundle-Name: Azure IoT Hub Service Client
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
 Bundle-License: MIT License
 Bundle-Version: ${project.version}
 Import-Package: \\
@@ -9,4 +9,3 @@ Export-Package: \\
   *;version=${project.version}
 -includeresource: \\
   NOTICE
-

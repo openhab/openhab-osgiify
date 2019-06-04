@@ -12,7 +12,7 @@
   <artifactId>org.apache.ftpserver.ftpserver-core</artifactId>
   <version>1.1.0</version>
 
-  <name>openHAB :: OSGi-ify :: Apache Ftpserver Core</name>
+  <name>Apache Ftpserver Core</name>
 
   <properties>
     <origin.groupId>org.apache.ftpserver</origin.groupId>

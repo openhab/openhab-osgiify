@@ -12,7 +12,7 @@
   <artifactId>org.json.json-20131018</artifactId>
   <version>20131018</version>
 
-  <name>openHAB :: OSGi-ify :: JSON in Java</name>
+  <name>JSON in Java</name>
 
   <properties>
     <origin.groupId>org.json</origin.groupId>

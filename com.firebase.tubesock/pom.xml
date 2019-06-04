@@ -12,7 +12,7 @@
   <artifactId>com.firebase.tubesock</artifactId>
   <version>0.0.1</version>
 
-  <name>openHAB :: OSGi-ify :: Tubesock WebSocket Client</name>
+  <name>Tubesock WebSocket Client</name>
 
   <properties>
     <origin.groupId>com.firebase</origin.groupId>

@@ -12,7 +12,7 @@
   <artifactId>com.microsoft.azure.azure-eventhubs</artifactId>
   <version>0.14.0</version>
 
-  <name>openHAB :: OSGi-ify :: Azure EventHubs</name>
+  <name>Azure EventHubs</name>
 
   <properties>
     <origin.groupId>com.microsoft.azure</origin.groupId>

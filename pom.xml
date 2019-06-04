@@ -9,7 +9,7 @@
 
   <packaging>pom</packaging>
 
-  <name>openHAB :: OSGi-ify</name>
+  <name>openHAB OSGi-ify</name>
   <description>This project contains OSGi-ified versions of openHAB dependencies</description>
 
   <organization>
@@ -42,7 +42,16 @@
     <module>de.zazaz.iot.bosch.indego.bosch-indego-controller-lib</module>
     <module>fr.bmartel.http-endec</module>
     <module>fr.bmartel.jspeedtest</module>
+    <module>io.moquette.moquette-broker</module>
     <module>io.netty.netty-all</module>
+    <module>io.netty.netty-buffer</module>
+    <module>io.netty.netty-codec</module>
+    <module>io.netty.netty-codec-mqtt</module>
+    <module>io.netty.netty-common</module>
+    <module>io.netty.netty-handler</module>
+    <module>io.netty.netty-resolver</module>
+    <module>io.netty.netty-transport</module>
+    <module>javazoom.jlayer</module>
     <module>net.vrallev.ecc.ecc-25519-java</module>
     <module>org.apache.ftpserver.ftplet-api</module>
     <module>org.apache.ftpserver.ftpserver-core</module>

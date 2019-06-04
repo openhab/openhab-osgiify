@@ -12,7 +12,7 @@
   <artifactId>net.vrallev.ecc.ecc-25519-java</artifactId>
   <version>1.0.1</version>
 
-  <name>openHAB :: OSGi-ify :: ECC 25519</name>
+  <name>ECC 25519</name>
 
   <properties>
     <origin.groupId>net.vrallev.ecc</origin.groupId>

@@ -1,5 +1,5 @@
-Bundle-Description: OSGi-ified version of CUPS4J
-Bundle-Name: CUPS4J
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
 Bundle-License: LGPL 3.0 License
 Bundle-Version: ${project.version}
 Import-Package: \\

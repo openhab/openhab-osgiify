@@ -12,7 +12,7 @@
   <artifactId>com.google.http-client.google-http-client-gson</artifactId>
   <version>1.27.0</version>
 
-  <name>openHAB :: OSGi-ify :: GSON Extensions</name>
+  <name>GSON Extensions</name>
 
   <properties>
     <origin.groupId>com.google.http-client</origin.groupId>

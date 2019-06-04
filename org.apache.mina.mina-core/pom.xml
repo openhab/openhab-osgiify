@@ -12,7 +12,7 @@
   <artifactId>org.apache.mina.mina-core</artifactId>
   <version>2.0.16</version>
 
-  <name>openHAB :: OSGi-ify :: Apache MINA Core</name>
+  <name>Apache MINA Core</name>
 
   <properties>
     <origin.groupId>org.apache.mina</origin.groupId>

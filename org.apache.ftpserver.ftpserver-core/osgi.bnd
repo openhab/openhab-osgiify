@@ -1,5 +1,5 @@
-Bundle-Description: OSGi-ified version of Apache Ftpserver Core
-Bundle-Name: Apache Ftpserver Core
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
 Bundle-License: Apache 2.0 License
 Bundle-Version: ${project.version}
 Import-Package: \\

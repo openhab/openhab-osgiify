@@ -1,5 +1,5 @@
-Bundle-Description: OSGi-ified version of Tchaikovsky Allplay Library
-Bundle-Name: Tchaikovsky Allplay Library
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
 Bundle-License: Apache 2.0
 Bundle-Version: ${project.version}
 Import-Package: \\

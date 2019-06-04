@@ -38,6 +38,7 @@
     <module>com.squareup.okhttp.okhttp</module>
     <module>com.squareup.okio.okio</module>
     <module>com.squareup.retrofit.retrofit</module>
+    <module>de.kaizencode.tchaikovsky</module>
     <module>de.zazaz.iot.bosch.indego.bosch-indego-controller-lib</module>
     <module>fr.bmartel.http-endec</module>
     <module>fr.bmartel.jspeedtest</module>
@@ -99,6 +100,18 @@
       <name>JFrog Artifactory Repository</name>
       <url>https://openhab.jfrog.io/openhab/libs-release</url>
     </repository>
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>j-n-k-3rdparty</id>
+      <name>J-N-K Openhab 3rdparty Repository</name>
+      <url>https://dl.bintray.com/j-n-k/openhab-3rdparty</url>
+    </repository>
   </repositories>
 
   <pluginRepositories>
@@ -123,7 +136,7 @@
   <build>
     <pluginManagement>
       <plugins>
-        <!-- clean target always before downloading -->
+        <!-- always clean before downloading -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
@@ -175,7 +188,7 @@
                     <type>jar</type>
                     <classifier>sources</classifier>
                     <outputDirectory>${project.build.directory}</outputDirectory>
-                    <destFileName>${project.groupId}-${project.artifactId}-${project.version}-sources.jar</destFileName>
+                    <destFileName>${project.artifactId}-${project.version}-sources.jar</destFileName>
                     <overWrite>true</overWrite>
                   </artifactItem>
                 </artifactItems>
@@ -223,7 +236,7 @@ Bundle-SymbolicName: ${project.artifactId}]]></bnd>
               <configuration>
                 <artifacts>
                   <artifact>
-                    <file>${project.build.directory}/${project.groupId}-${project.artifactId}-${project.version}-sources.jar</file>
+                    <file>${project.build.directory}/${project.artifactId}-${project.version}-sources.jar</file>
                     <type>jar</type>
                     <classifier>sources</classifier>
                   </artifact>
@@ -283,8 +296,9 @@ Bundle-SymbolicName: ${project.artifactId}]]></bnd>
   </build>
   
   <profiles>
+    <!-- standard profile -->
     <profile>
-      <id>from-standard-repository</id>
+      <id>osgiify</id>
       <activation>
         <file>
           <exists>osgi.bnd</exists>
@@ -304,6 +318,40 @@ Bundle-SymbolicName: ${project.artifactId}]]></bnd>
             <artifactId>build-helper-maven-plugin</artifactId>
           </plugin>
         </plugins>
+      </build>
+    </profile>
+    <!-- sources not available -->
+    <profile>
+      <id>noSources</id>
+      <activation>
+        <file>
+          <exists>noSources.profile</exists>
+        </file>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <artifactId>maven-dependency-plugin</artifactId>
+              <executions>
+                <execution>
+                  <id>copy-sources</id>
+                  <phase>none</phase>
+                </execution>
+              </executions>
+            </plugin>
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>build-helper-maven-plugin</artifactId>
+              <executions>
+                <execution>
+                  <id>attach-sources</id>
+                  <phase>none</phase>
+                </execution>
+              </executions>
+            </plugin>
+          </plugins>
+        </pluginManagement>
       </build>
     </profile>
   </profiles>

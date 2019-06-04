@@ -12,7 +12,7 @@
   <artifactId>com.squareup.okhttp.okhttp</artifactId>
   <version>2.3.0</version>
 
-  <name>openHAB :: OSGi-ify :: OK HTTP Client Library</name>
+  <name>openHAB :: OSGi-ify :: OK HTTP Client</name>
 
   <properties>
     <origin.groupId>com.squareup.okhttp</origin.groupId>

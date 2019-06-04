@@ -12,7 +12,7 @@
   <artifactId>com.squareup.retrofit.retrofit</artifactId>
   <version>1.9.0</version>
 
-  <name>openHAB :: OSGi-ify :: OK Retrofit HTTP Client Library</name>
+  <name>openHAB :: OSGi-ify :: OK Retrofit HTTP Client</name>
 
   <properties>
     <origin.groupId>com.squareup.retrofit</origin.groupId>

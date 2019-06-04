@@ -1,5 +1,5 @@
-Bundle-Description: OSGi-ified version of OK HTTP Client Library
-Bundle-Name: OK HTTP Client Library
+Bundle-Description: OSGi-ified version of OK HTTP Client
+Bundle-Name: OK HTTP Client
 Bundle-License: Apache 2.0 License
 Bundle-Version: ${project.version}
 Import-Package: \\
@@ -9,4 +9,3 @@ Export-Package: \\
   *;version=${project.version}
 -includeresource: \\
   NOTICE
-

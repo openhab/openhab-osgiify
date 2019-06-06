@@ -51,6 +51,7 @@
     <module>io.netty.netty-handler</module>
     <module>io.netty.netty-resolver</module>
     <module>io.netty.netty-transport</module>
+    <module>intel-iot-devkit.tinyb</module>
     <module>javazoom.jlayer</module>
     <module>net.vrallev.ecc.ecc-25519-java</module>
     <module>org.apache.ftpserver.ftplet-api</module>

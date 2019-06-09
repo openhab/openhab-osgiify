@@ -14,7 +14,7 @@ https://github.com/J-N-K/openhab-osgiify
 
 == Third-party Content
 
-ftplet-api
-* License: Apache 2.0 License
-* Project: https://mina.apache.org/ftpserver-project/ftplet.html
-* Source:  https://gitbox.apache.org/repos/asf?p=mina.git
+socket.io-client
+* License: MIT License
+* Project: https://socketio.github.io/socket.io-client-java/
+* Source:  https://github.com/socketio/socket.io-client-java

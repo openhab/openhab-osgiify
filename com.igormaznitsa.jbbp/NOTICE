@@ -14,7 +14,7 @@ https://github.com/J-N-K/openhab-osgiify
 
 == Third-party Content
 
-retrofit
+jbbp
 * License: Apache 2.0 License
-* Project: https://square.github.io/retrofit
-* Source:  https://github.com/square/retrofit
+* Project: https://github.com/raydac/java-binary-block-parser
+* Source:  https://github.com/raydac/java-binary-block-parser

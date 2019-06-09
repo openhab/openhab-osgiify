@@ -14,7 +14,7 @@ https://github.com/J-N-K/openhab-osgiify
 
 == Third-party Content
 
-mina-core
-* License: Apache 2.0 License
-* Project: https://mina.apache.org/mina-project
-* Source:  https://gitbox.apache.org/repos/asf?p=mina.git
+re2j
+* License: Go License
+* Project: https://github.com/google/re2j
+* Source:  https://github.com/google/re2j

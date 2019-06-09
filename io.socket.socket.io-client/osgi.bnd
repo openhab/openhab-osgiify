@@ -1,7 +1,6 @@
 Bundle-Description: OSGi-ified version of ${project.name}
 Bundle-Name: ${project.name}
-Bundle-License: JSON License
-Bundle-SymbolicName: org.json.json
+Bundle-License: MIT License
 Bundle-Version: ${project.version}
 Import-Package: \\
   *
@@ -10,3 +9,4 @@ Export-Package: \\
   *;version=${project.version}
 -includeresource: \\
   NOTICE
+

@@ -9,18 +9,14 @@
     <version>2.5.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>org.json.json-20131018</artifactId>
-  <version>20131018</version>
+  <artifactId>io.socket.engine.io-client</artifactId>
+  <version>1.0.0</version>
 
-  <name>JSON in Java</name>
+  <name>IO.Socket Engine Client</name>
 
   <properties>
-    <origin.groupId>org.json</origin.groupId>
-    <origin.artifactId>json</origin.artifactId>
+    <origin.groupId>io.socket</origin.groupId>
+    <origin.artifactId>engine.io-client</origin.artifactId>
   </properties>
-
-  <build>
-   <finalName>org.json.json-20131018</finalName>
- </build>
 
 </project>

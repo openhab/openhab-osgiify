@@ -9,14 +9,14 @@
     <version>2.5.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>org.apache.ftpserver.ftplet-api</artifactId>
-  <version>1.1.0</version>
+  <artifactId>io.socket.socket.io-client</artifactId>
+  <version>1.0.0</version>
 
-  <name>Apache Ftplet API</name>
+  <name>IO.Socket Socket Client</name>
 
   <properties>
-    <origin.groupId>org.apache.ftpserver</origin.groupId>
-    <origin.artifactId>ftplet-api</origin.artifactId>
+    <origin.groupId>io.socket</origin.groupId>
+    <origin.artifactId>socket.io-client</origin.artifactId>
   </properties>
 
 </project>

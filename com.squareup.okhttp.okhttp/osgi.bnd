@@ -3,6 +3,9 @@ Bundle-Name: ${project.name}
 Bundle-License: Apache 2.0 License
 Bundle-Version: ${project.version}
 Import-Package: \\
+  android.net.*;resolution:=optional, \\
+  com.android.org.conscrypt.*;resolution:=optional, \\
+  org.apache.harmony.xnet.provider.jsse.*;resolution:=optional, \\
   *
 Export-Package: \\
   !NOTICE, \\

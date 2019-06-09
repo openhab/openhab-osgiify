@@ -9,9 +9,8 @@ Export-Package: \\
   !lib.*, \\
   *;version=${project.version}
 Bundle-NativeCode: \\
-  lib/x86-64/libjavatinyb.so;processor=amd64;osname=linux, \\
-  lib/x86-64/libtinyb.so;processor=amd64;osname=linux, \\
-  lib/armv6hf/libjavatinyb.so;processor=amd64;osname=linux, \\
-  lib/armv6hf/libtinyb.so;processor=arm;osname=linux,*
+  lib/x86-64/libjavatinyb.so;lib/x86-64/libtinyb.so;processor=amd64;osname=linux, \\
+  lib/armv6hf/libjavatinyb.so;lib/armv6hf/libtinyb.so;processor=arm;osname=linux, \\
+  *
 -includeresource: \\
   NOTICE

@@ -9,7 +9,7 @@
     <version>2.5.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>com.squareup.okio.okio</artifactId>
+  <artifactId>com.squareup.okio.okio-1.3.0</artifactId>
   <version>1.3.0</version>
 
   <name>OK I/O</name>
@@ -19,4 +19,8 @@
     <origin.artifactId>okio</origin.artifactId>
   </properties>
 
+  <build>
+   <finalName>com.squareup.okio.okio-1.3.0</finalName>
+ </build>
+ 
 </project>

@@ -9,18 +9,14 @@
     <version>2.5.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>org.json.json-20140107</artifactId>
-  <version>20140107</version>
+  <artifactId>com.igormaznitsa.jbbp</artifactId>
+  <version>1.4.1</version>
 
-  <name>JSON in Java</name>
+  <name>JBBP</name>
 
   <properties>
-    <origin.groupId>org.json</origin.groupId>
-    <origin.artifactId>json</origin.artifactId>
+    <origin.groupId>com.igormaznitsa</origin.groupId>
+    <origin.artifactId>jbbp</origin.artifactId>
   </properties>
-
-  <build>
-   <finalName>org.json.json-20140107</finalName>
- </build>
 
 </project>

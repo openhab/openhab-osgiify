@@ -14,7 +14,7 @@ https://github.com/J-N-K/openhab-osgiify
 
 == Third-party Content
 
-xpp3
+jinjava
 * License: Apache 2.0 License
-* Project: http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1
-* Source:  http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1
+* Project: https://github.com/HubSpot/jinjava
+* Source:  https://github.com/HubSpot/jinjava

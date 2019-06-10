@@ -25,11 +25,18 @@
   </licenses>
 
   <modules>
+    <module>com.amazonaws.aws-java-sdk-core</module>
+    <module>com.amazonaws.aws-java-sdk-polly</module>
     <module>com.firebase.tubesock</module>
     <module>com.github.calimero.calimero-core</module>
     <module>com.github.calimero.calimero-device</module>
     <module>com.github.calimero.calimero-rxtx</module>
+    <module>com.google.api.api-common</module>
+    <module>com.google.api.gax</module>
+    <module>com.google.auth.google-auth-library-credentials</module>
+    <module>com.google.auth.google-auth-library-oauth2-http</module>
     <module>com.google.http-client.google-http-client-gson</module>
+    <module>com.google.http-client.google-http-client-jackson2</module>
     <module>com.google.re2j.re2j</module>
     <module>com.hubspot.jinjava.jinjava</module>
     <module>com.igormaznitsa.jbbp</module>

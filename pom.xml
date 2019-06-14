@@ -47,6 +47,7 @@
     <module>com.pi4j.pi4j-gpio-extension</module>
     <module>com.squareup.okhttp.okhttp</module>
     <module>com.squareup.okio.okio</module>
+    <module>com.squareup.retrofit.retrofit</module>
     <module>de.kaizencode.tchaikovsky</module>
     <module>de.zazaz.iot.bosch.indego.bosch-indego-controller-lib</module>
     <module>fr.bmartel.http-endec</module>

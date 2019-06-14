@@ -3,6 +3,7 @@ Bundle-Name: ${project.name}
 Bundle-License: Apache 2.0
 Bundle-Version: ${project.version}
 Import-Package: \\
+  !org.slf4j.impl.*, \\
   *
 Export-Package: \\
   !NOTICE, \\

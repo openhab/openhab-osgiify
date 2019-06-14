@@ -1,13 +1,15 @@
 Bundle-Description: OSGi-ified version of ${project.name}
 Bundle-Name: ${project.name}
-Bundle-License: LGPL 3.0 License
+Bundle-License: Apache 2.0 License
 Bundle-Version: ${project.version}
 Import-Package: \\
-  org.simpleframework.*;resolution:="optional", \\
+  android.*;resolution:="optional", \\
+  com.google.appengine.api.urlfetch.*;resolution:="optional", \\
+  org.apache.http.*;resolution:="optional", \\
+  rrx.*;resolution:="optional", \\
   *
 Export-Package: \\
   !NOTICE, \\
   *;version=${project.version}
 -includeresource: \\
   NOTICE
-

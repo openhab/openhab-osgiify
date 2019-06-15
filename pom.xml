@@ -53,7 +53,6 @@
     <module>fr.bmartel.http-endec</module>
     <module>fr.bmartel.jspeedtest</module>
     <module>io.moquette.moquette-broker</module>
-    <module>io.netty.netty-all</module>
     <module>io.socket.engine.io-client</module>
     <module>io.socket.socket.io-client</module>
     <module>intel-iot-devkit.tinyb</module>
@@ -215,11 +214,11 @@
           <configuration>
             <bndfile>osgi.bnd</bndfile>
             <bnd><![CDATA[
--removeheaders: Bnd-LastModified, \\
-  Built-By, \\
-  Tool, \\
-  Archiver-Version, \\
-  Created-By, \\
+-removeheaders: Bnd-LastModified, \
+  Built-By, \
+  Tool, \
+  Archiver-Version, \
+  Created-By, \
   Build-Jdk
 Automatic-Module-Name: ${def;bsn}
 Bundle-SymbolicName: ${project.artifactId}]]></bnd>

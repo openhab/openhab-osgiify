@@ -2,10 +2,10 @@ Bundle-Description: OSGi-ified version of ${project.name}
 Bundle-Name: ${project.name}
 Bundle-License: Google License
 Bundle-Version: ${project.version}
-Import-Package: \\
+Import-Package: \
   *
-Export-Package: \\
-  !NOTICE, \\
+Export-Package: \
+  !NOTICE, \
   *;version=${project.version}
--includeresource: \\
+-includeresource: \
   NOTICE

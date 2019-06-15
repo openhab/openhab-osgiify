@@ -2,19 +2,19 @@ Bundle-Description: OSGi-ified version of ${project.name}
 Bundle-Name: ${project.name}
 Bundle-License: Apache 2.0
 Bundle-Version: ${project.version}
-Import-Package: \\
-  !org.slf4j.impl.*, \\
+Import-Package: \
+  !org.slf4j.impl.*, \
   *
-Export-Package: \\
-  !NOTICE, \\
-  !org.slf4j.*, \\
-  !lib.*, \\
+Export-Package: \
+  !NOTICE, \
+  !org.slf4j.*, \
+  !lib.*, \
   *;version=${project.version}
-Bundle-NativeCode: \\
-  lib/x86-64/win/alljoyn_java.dll;processor=amd64;osname=win32;osname=Windows8;osname=Windows 8;osname=Win8;osname=Windows10;osname=Windows 10;osname=Win10, \\
-  lib/x86/win/alljoyn_java.dll;processor=x86;osname=win32;osname=Windows8;osname=Windows 8;osname=Win8;osname=Windows10;osname=Windows 10;osname=Win10, \\
-  lib/x86/linux/liballjoyn_java.so;processor=x86;osname=linux, \\
-  lib/x86-64/linux/liballjoyn_java.so;processor=amd64;osname=linux, \\
+Bundle-NativeCode: \
+  lib/x86-64/win/alljoyn_java.dll;processor=amd64;osname=win32;osname=Windows8;osname=Windows 8;osname=Win8;osname=Windows10;osname=Windows 10;osname=Win10, \
+  lib/x86/win/alljoyn_java.dll;processor=x86;osname=win32;osname=Windows8;osname=Windows 8;osname=Win8;osname=Windows10;osname=Windows 10;osname=Win10, \
+  lib/x86/linux/liballjoyn_java.so;processor=x86;osname=linux, \
+  lib/x86-64/linux/liballjoyn_java.so;processor=amd64;osname=linux, \
   lib/arm/linux/liballjoyn_java.so;processor=arm;osname=linux,*
--includeresource: \\
+-includeresource: \
   NOTICE

@@ -2,14 +2,14 @@ Bundle-Description: OSGi-ified version of ${project.name}
 Bundle-Name: ${project.name}
 Bundle-License: Apache 2.0 License
 Bundle-Version: ${project.version}
-Import-Package: \\
-  android.*;resolution:="optional", \\
-  com.google.appengine.api.urlfetch.*;resolution:="optional", \\
-  org.apache.http.*;resolution:="optional", \\
-  rrx.*;resolution:="optional", \\
+Import-Package: \
+  android.*;resolution:="optional", \
+  com.google.appengine.api.urlfetch.*;resolution:="optional", \
+  org.apache.http.*;resolution:="optional", \
+  rx.*;resolution:="optional", \
   *
-Export-Package: \\
-  !NOTICE, \\
+Export-Package: \
+  !NOTICE, \
   *;version=${project.version}
--includeresource: \\
-  NOTICE
+-includeresource: \
+   NOTICE

@@ -2,15 +2,15 @@ Bundle-Description: OSGi-ified version of ${project.name}
 Bundle-Name: ${project.name}
 Bundle-License: MIT
 Bundle-Version: ${project.version}
-Import-Package: \\
+Import-Package: \
   *
-Export-Package: \\
-  !NOTICE, \\
-  !lib.*, \\
+Export-Package: \
+  !NOTICE, \
+  !lib.*, \
   *;version=${project.version}
-Bundle-NativeCode: \\
-  lib/x86-64/libjavatinyb.so;lib/x86-64/libtinyb.so;processor=amd64;osname=linux, \\
-  lib/armv6hf/libjavatinyb.so;lib/armv6hf/libtinyb.so;processor=arm;osname=linux, \\
+Bundle-NativeCode: \
+  lib/x86-64/libjavatinyb.so;lib/x86-64/libtinyb.so;processor=amd64;osname=linux, \
+  lib/armv6hf/libjavatinyb.so;lib/armv6hf/libtinyb.so;processor=arm;osname=linux, \
   *
--includeresource: \\
+-includeresource: \
   NOTICE

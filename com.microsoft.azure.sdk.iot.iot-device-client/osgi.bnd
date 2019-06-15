@@ -2,10 +2,13 @@ Bundle-Description: OSGi-ified version of ${project.name}
 Bundle-Name: ${project.name}
 Bundle-License: MIT License
 Bundle-Version: ${project.version}
-Import-Package: \\
+Import-Package: \
+  com.microsoft.azure.sdk.iot.deps.serializer;resolution:="optional", \
+  com.microsoft.azure.sdk.iot.deps.ws.*;resolution:="optional", \
+  org.apache.qpid.proton.*;resolution:="optional", \
   *
-Export-Package: \\
-  !NOTICE, \\
+Export-Package: \
+  !NOTICE, \
   *;version=${project.version}
--includeresource: \\
+-includeresource: \
   NOTICE

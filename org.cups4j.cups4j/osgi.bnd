@@ -2,12 +2,12 @@ Bundle-Description: OSGi-ified version of ${project.name}
 Bundle-Name: ${project.name}
 Bundle-License: LGPL 3.0 License
 Bundle-Version: ${project.version}
-Import-Package: \\
-  org.simpleframework.*;resolution:="optional", \\
+Import-Package: \
+  org.simpleframework.*;resolution:="optional", \
   *
-Export-Package: \\
-  !NOTICE, \\
+Export-Package: \
+  !NOTICE, \
   *;version=${project.version}
--includeresource: \\
+-includeresource: \
   NOTICE
 

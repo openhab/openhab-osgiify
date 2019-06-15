@@ -3,11 +3,11 @@ Bundle-Name: ${project.name}
 Bundle-License: JSON License
 Bundle-SymbolicName: org.json.json
 Bundle-Version: ${project.version}
-Import-Package: \\
+Import-Package: \
   *
-Export-Package: \\
-  !NOTICE, \\
+Export-Package: \
+  !NOTICE, \
   *;version=${project.version}
--includeresource: \\
+-includeresource: \
   NOTICE
 

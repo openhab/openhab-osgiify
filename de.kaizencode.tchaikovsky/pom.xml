@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.openhab.osgiify</groupId>
+    <artifactId>org.openhab.reactor.osgiify</artifactId>
+    <version>2.5.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>de.kaizencode.tchaikovsky</artifactId>
+  <version>0.0.1</version>
+
+  <name>Tchaikovsky Allplay</name>
+
+  <properties>
+    <origin.groupId>de.kaizencode</origin.groupId>
+    <origin.artifactId>tchaikovsky</origin.artifactId>
+  </properties>
+
+  <build>
+    <plugins>
+      <!-- exclude packages: slf4j -->
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <excludes>
+            <exclude>**/org/slf4j/**</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+      <!-- download additional files: native code libraries from alljoyn -->
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.8</version>
+        <executions>
+          <execution>
+            <id>download-additional-files</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <mkdir dir="target/classes/lib/arm/linux" />
+                <get src="https://dl.bintray.com/j-n-k/openhab-3rdparty-contrib/arm/linux/liballjoyn_java.so" dest="target/classes/lib/arm/linux/liballjoyn_java.so" />
+                <mkdir dir="target/classes/lib/x86/linux" />
+                <get src="https://dl.bintray.com/j-n-k/openhab-3rdparty-contrib/x86/linux/liballjoyn_java.so" dest="target/classes/lib/x86/linux/liballjoyn_java.so" />
+                <mkdir dir="target/classes/lib/x86-64/linux" />
+                <get src="https://dl.bintray.com/j-n-k/openhab-3rdparty-contrib/x86-64/linux/liballjoyn_java.so" dest="target/classes/lib/x86-64/linux/liballjoyn_java.so" />
+                <mkdir dir="target/classes/lib/x86/win" />
+                <get src="https://dl.bintray.com/j-n-k/openhab-3rdparty-contrib/x86/win/alljoyn_java.dll" dest="target/classes/lib/x86/win/alljoyn_java.dll" />
+                <mkdir dir="target/classes/lib/x86-64/win" />
+                <get src="https://dl.bintray.com/j-n-k/openhab-3rdparty-contrib/x86-64/win/alljoyn_java.dll" dest="target/classes/lib/x86-64/win/alljoyn_java.dll" />
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

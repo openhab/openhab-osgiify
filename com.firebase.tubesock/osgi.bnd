@@ -1,0 +1,13 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: MIT License
+Bundle-Version: ${project.version}
+Import-Package: \
+  org.apache.http.conn.ssl;resolution:="optional", \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+-includeresource: \
+  NOTICE
+

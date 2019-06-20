@@ -1,0 +1,14 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: GPL v2 License
+Bundle-Version: ${project.version}
+Import-Package: \
+  javax.microedition.io.*;resolution:="optional", \
+  javax.usb.*;resolution:="optional", \
+  org.usb4java.*;resolution:="optional", \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+-includeresource: \
+  NOTICE

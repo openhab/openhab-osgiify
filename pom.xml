@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.openhab.osgiify</groupId>
+  <artifactId>org.openhab.reactor.osgiify</artifactId>
+  <version>2.5.0-SNAPSHOT</version>
+
+  <packaging>pom</packaging>
+
+  <name>openHAB OSGi-ify</name>
+  <description>This project contains OSGi-ified versions of openHAB dependencies</description>
+
+  <organization>
+    <name>openHAB.org</name>
+    <url>http://www.openhab.org</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>Eclipse Public License 2.0</name>
+      <url>https://www.eclipse.org/legal/epl-2.0/</url>
+    </license>
+  </licenses>
+
+  <modules>
+    <module>com.amazonaws.aws-java-sdk-core</module>
+    <module>com.amazonaws.aws-java-sdk-polly</module>
+    <module>com.firebase.tubesock</module>
+    <module>com.github.calimero.calimero-core</module>
+    <module>com.github.calimero.calimero-device</module>
+    <module>com.github.calimero.calimero-rxtx</module>
+    <module>com.google.api.api-common</module>
+    <module>com.google.api.gax</module>
+    <module>com.google.auth.google-auth-library-credentials</module>
+    <module>com.google.auth.google-auth-library-oauth2-http</module>
+    <module>com.google.http-client.google-http-client-gson</module>
+    <module>com.google.http-client.google-http-client-jackson2</module>
+    <module>com.google.re2j.re2j</module>
+    <module>com.hubspot.jinjava.jinjava</module>
+    <module>com.igormaznitsa.jbbp</module>
+    <module>com.microsoft.azure.azure-eventhubs</module>
+    <module>com.microsoft.azure.sdk.iot.iot-device-client</module>
+    <module>com.microsoft.azure.sdk.iot.iot-service-client</module>
+    <module>com.nimbusds.srp6a</module>
+    <module>com.pi4j.pi4j-gpio-extension</module>
+    <module>com.squareup.okhttp.okhttp</module>
+    <module>com.squareup.okio.okio</module>
+    <module>com.squareup.retrofit.retrofit</module>
+    <module>de.kaizencode.tchaikovsky</module>
+    <module>de.zazaz.iot.bosch.indego.bosch-indego-controller-lib</module>
+    <module>fr.bmartel.http-endec</module>
+    <module>fr.bmartel.jspeedtest</module>
+    <module>io.moquette.moquette-broker</module>
+    <module>io.socket.engine.io-client</module>
+    <module>io.socket.socket.io-client</module>
+    <module>intel-iot-devkit.tinyb</module>
+    <module>javazoom.jlayer</module>
+    <module>net.vrallev.ecc.ecc-25519-java</module>
+    <module>net.wimpi.jamod</module>
+    <module>org.cups4j.cups4j</module>
+    <module>org.java-websocket.java-websocket</module>
+    <module>org.json.json</module>
+    <module>org.pcap4j.pcap4j-core</module>
+    <module>org.pcap4j.pcap4j-packetfactory-static</module>
+    <module>org.zeromq.curve25519-java</module>
+  </modules>
+
+  <scm>
+    <connection>scm:git:https://github.com/openhab/openhab-osgiify.git</connection>
+    <developerConnection>scm:git:https://github.com/J-N-K/openhab-osgiify.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/J-N-K/openhab-osgiify</url>
+  </scm>
+
+  <issueManagement>
+    <system>Github</system>
+    <url>https://github.com/J-N-K/openhab-osgiify/issues</url>
+  </issueManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <bnd.version>4.2.0</bnd.version>
+  </properties>
+
+  <repositories>
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>jcenter</id>
+      <name>JCenter Repository</name>
+      <url>https://jcenter.bintray.com</url>
+    </repository>
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>openhab-artifactory-release</id>
+      <name>JFrog Artifactory Repository</name>
+      <url>https://openhab.jfrog.io/openhab/libs-release</url>
+    </repository>
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>j-n-k-3rdparty</id>
+      <name>J-N-K Openhab 3rdparty Repository</name>
+      <url>https://dl.bintray.com/j-n-k/openhab-3rdparty</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>jcenter</id>
+      <url>https://jcenter.bintray.com</url>
+    </pluginRepository>
+    <pluginRepository>
+      <id>openhab-artifactory-release</id>
+      <url>https://openhab.jfrog.io/openhab/libs-release</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <distributionManagement>  
+    <repository>
+      <id>internal.repo</id>
+      <name>My Repo</name>
+      <url>file://c:/testrepo</url>
+    </repository>
+  </distributionManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!-- always clean before downloading -->
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+          <executions>
+            <execution>
+              <id>auto-clean</id>
+              <phase>initialize</phase>
+              <goals>
+                <goal>clean</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.0.0</version>
+          <executions>
+            <!-- unpack dependency -->
+            <execution>
+              <id>unpack-dependency</id>
+              <goals>
+                <goal>unpack</goal>
+              </goals>
+              <configuration>
+                <artifactItems>
+                  <artifactItem>
+                    <groupId>${origin.groupId}</groupId>
+                    <artifactId>${origin.artifactId}</artifactId>
+                    <version>${project.version}</version>
+                    <type>jar</type>
+                    <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+                    <overWrite>true</overWrite>
+                  </artifactItem>
+                </artifactItems>
+              </configuration>
+            </execution>
+            <!-- copy sources -->
+            <execution>
+              <id>copy-sources</id>
+              <goals>
+                <goal>copy</goal>
+              </goals>
+              <configuration>
+                <artifactItems>
+                  <artifactItem>
+                    <groupId>${origin.groupId}</groupId>
+                    <artifactId>${origin.artifactId}</artifactId>
+                    <version>${project.version}</version>
+                    <type>jar</type>
+                    <classifier>sources</classifier>
+                    <outputDirectory>${project.build.directory}</outputDirectory>
+                    <destFileName>${project.artifactId}-${project.version}-sources.jar</destFileName>
+                    <overWrite>true</overWrite>
+                  </artifactItem>
+                </artifactItems>
+                <failOnError>false</failOnError>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>biz.aQute.bnd</groupId>
+          <artifactId>bnd-maven-plugin</artifactId>
+          <version>${bnd.version}</version>
+          <configuration>
+            <bndfile>osgi.bnd</bndfile>
+            <bnd><![CDATA[
+-removeheaders: Bnd-LastModified, \
+  Built-By, \
+  Tool, \
+  Archiver-Version, \
+  Created-By, \
+  Build-Jdk
+Automatic-Module-Name: ${def;bsn}
+Bundle-SymbolicName: ${project.artifactId}]]></bnd>
+          </configuration>
+          <executions>
+            <execution>
+              <goals>
+                <goal>bnd-process</goal>
+               </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <!-- attach sources -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>1.12</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <phase>package</phase>
+              <goals>
+                <goal>attach-artifact</goal>
+              </goals>
+              <configuration>
+                <artifacts>
+                  <artifact>
+                    <file>${project.build.directory}/${project.artifactId}-${project.version}-sources.jar</file>
+                    <type>jar</type>
+                    <classifier>sources</classifier>
+                  </artifact>
+                </artifacts>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <configuration>
+            <archive>
+              <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+            </archive>
+            <skipIfEmpty>true</skipIfEmpty>
+          </configuration>
+        </plugin>
+        <!-- skip unneeded executions -->
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>default-compile</id>
+              <phase>none</phase>
+            </execution>
+            <execution>
+              <id>default-testCompile</id>
+              <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>default-resources</id>
+              <phase>none</phase>
+            </execution>
+            <execution>
+              <id>default-testResources</id>
+              <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>default-test</id>
+              <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  
+  <profiles>
+    <!-- standard profile -->
+    <profile>
+      <id>osgiify</id>
+      <activation>
+        <file>
+          <exists>osgi.bnd</exists>
+        </file>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-dependency-plugin</artifactId>
+          </plugin>
+          <plugin>
+            <groupId>biz.aQute.bnd</groupId>
+            <artifactId>bnd-maven-plugin</artifactId>
+          </plugin>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <!-- sources not available -->
+    <profile>
+      <id>noSources</id>
+      <activation>
+        <file>
+          <exists>noSources.profile</exists>
+        </file>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <artifactId>maven-dependency-plugin</artifactId>
+              <executions>
+                <execution>
+                  <id>copy-sources</id>
+                  <phase>none</phase>
+                </execution>
+              </executions>
+            </plugin>
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>build-helper-maven-plugin</artifactId>
+              <executions>
+                <execution>
+                  <id>attach-sources</id>
+                  <phase>none</phase>
+                </execution>
+              </executions>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+  </profiles>
+
+</project>

@@ -1,0 +1,17 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: Apache 2.0 License
+Bundle-Version: ${project.version}
+Import-Package: \
+  com.amazonaws.metrics.internal.cloudwatch.*;resolution:="optional", \
+  com.amazonaws.services.s3.internal.*;resolution:="optional", \
+  com.amazonaws.services.securitytoken.internal.*;resolution:="optional", \
+  com.sun.org.apache.xpath.internal.*;resolution:="optional", \
+  kotlin.*;resolution:="optional", \
+  software.amazon.ion.*;resolution:="optional", \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+-includeresource: \
+  NOTICE

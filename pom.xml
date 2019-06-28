@@ -3,6 +3,12 @@
 
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <groupId>org.openhab</groupId>
+    <artifactId>openhab-super-pom</artifactId>
+    <version>1.0.1</version>
+  </parent>
+
   <groupId>org.openhab.osgiify</groupId>
   <artifactId>org.openhab.reactor.osgiify</artifactId>
   <version>2.5.0-SNAPSHOT</version>
@@ -69,14 +75,14 @@
 
   <scm>
     <connection>scm:git:https://github.com/openhab/openhab-osgiify.git</connection>
-    <developerConnection>scm:git:https://github.com/J-N-K/openhab-osgiify.git</developerConnection>
+    <developerConnection>scm:git:https://github.com/openhab/openhab-osgiify.git</developerConnection>
     <tag>HEAD</tag>
-    <url>https://github.com/J-N-K/openhab-osgiify</url>
+    <url>https://github.com/openhab/openhab-osgiify</url>
   </scm>
 
   <issueManagement>
     <system>Github</system>
-    <url>https://github.com/J-N-K/openhab-osgiify/issues</url>
+    <url>https://github.com/openhab/openhab-osgiify/issues</url>
   </issueManagement>
 
   <properties>
@@ -94,53 +100,21 @@
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
-      <id>jcenter</id>
-      <name>JCenter Repository</name>
-      <url>https://jcenter.bintray.com</url>
-    </repository>
-    <repository>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>openhab-artifactory-release</id>
-      <name>JFrog Artifactory Repository</name>
-      <url>https://openhab.jfrog.io/openhab/libs-release</url>
-    </repository>
-    <repository>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
       <id>j-n-k-3rdparty</id>
-      <name>J-N-K Openhab 3rdparty Repository</name>
+      <name>J-N-K openHAB 3rdparty Repository</name>
       <url>https://dl.bintray.com/j-n-k/openhab-3rdparty</url>
     </repository>
   </repositories>
 
-  <pluginRepositories>
-    <pluginRepository>
-      <id>jcenter</id>
-      <url>https://jcenter.bintray.com</url>
-    </pluginRepository>
-    <pluginRepository>
-      <id>openhab-artifactory-release</id>
-      <url>https://openhab.jfrog.io/openhab/libs-release</url>
-    </pluginRepository>
-  </pluginRepositories>
-
-  <distributionManagement>  
+  <distributionManagement>
     <repository>
-      <id>internal.repo</id>
-      <name>My Repo</name>
-      <url>file://c:/testrepo</url>
+      <id>bintray</id>
+      <url>${oh.repo.distBaseUrl}/openhab-osgiify/;publish=1</url>
     </repository>
+    <snapshotRepository>
+      <id>jfrog</id>
+      <url>${oh.repo.snapshotBaseUrl}/libs-snapshot-local</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <build>

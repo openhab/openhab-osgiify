@@ -70,6 +70,8 @@
     <module>org.json.json</module>
     <module>org.pcap4j.pcap4j-core</module>
     <module>org.pcap4j.pcap4j-packetfactory-static</module>
+    <module>org.telegram.telegrambots</module>
+    <module>org.telegram.telegrambots-meta</module>
     <module>org.zeromq.curve25519-java</module>
   </modules>
 

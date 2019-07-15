@@ -108,17 +108,6 @@
     </repository>
   </repositories>
 
-  <distributionManagement>
-    <repository>
-      <id>bintray</id>
-      <url>${oh.repo.distBaseUrl}/openhab-osgiify/;publish=1</url>
-    </repository>
-    <snapshotRepository>
-      <id>jfrog</id>
-      <url>${oh.repo.snapshotBaseUrl}/libs-snapshot-local</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <build>
     <pluginManagement>
       <plugins>

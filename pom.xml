@@ -34,9 +34,6 @@
     <module>com.amazonaws.aws-java-sdk-core</module>
     <module>com.amazonaws.aws-java-sdk-polly</module>
     <module>com.firebase.tubesock</module>
-    <module>com.github.calimero.calimero-core</module>
-    <module>com.github.calimero.calimero-device</module>
-    <module>com.github.calimero.calimero-rxtx</module>
     <module>com.google.api.api-common</module>
     <module>com.google.api.gax</module>
     <module>com.google.auth.google-auth-library-credentials</module>
@@ -71,8 +68,6 @@
     <module>org.json.json</module>
     <module>org.pcap4j.pcap4j-core</module>
     <module>org.pcap4j.pcap4j-packetfactory-static</module>
-    <module>org.telegram.telegrambots</module>
-    <module>org.telegram.telegrambots-meta</module>
     <module>org.zeromq.curve25519-java</module>
   </modules>
 
@@ -92,6 +87,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <bnd.version>4.2.0</bnd.version>
+    <origin.version>${project.version}</origin.version>
   </properties>
 
   <repositories>
@@ -141,7 +137,7 @@
                   <artifactItem>
                     <groupId>${origin.groupId}</groupId>
                     <artifactId>${origin.artifactId}</artifactId>
-                    <version>${project.version}</version>
+                    <version>${origin.version}</version>
                     <type>jar</type>
                     <outputDirectory>${project.build.outputDirectory}</outputDirectory>
                     <overWrite>true</overWrite>
@@ -160,7 +156,7 @@
                   <artifactItem>
                     <groupId>${origin.groupId}</groupId>
                     <artifactId>${origin.artifactId}</artifactId>
-                    <version>${project.version}</version>
+                    <version>${origin.version}</version>
                     <type>jar</type>
                     <classifier>sources</classifier>
                     <outputDirectory>${project.build.directory}</outputDirectory>

@@ -91,21 +91,6 @@
     <origin.version>${project.version}</origin.version>
   </properties>
 
-  <repositories>
-    <repository>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>j-n-k-3rdparty</id>
-      <name>J-N-K openHAB 3rdparty Repository</name>
-      <url>https://dl.bintray.com/j-n-k/openhab-3rdparty</url>
-    </repository>
-  </repositories>
-
   <build>
     <pluginManagement>
       <plugins>

@@ -14,3 +14,7 @@ Bundle-NativeCode: \
   *
 -includeresource: \
   NOTICE
+
+Specification-Title: TinyB
+Specification-Vendor: Intel Corp.
+Specification-Version: 0.5

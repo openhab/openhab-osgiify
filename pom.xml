@@ -42,6 +42,7 @@
     <module>com.google.http-client.google-http-client-gson</module>
     <module>com.google.http-client.google-http-client-jackson2</module>
     <module>com.google.re2j.re2j</module>
+    <module>com.googlecode.java-ipv6.java-ipv6</module>
     <module>com.goterl.lazycode.lazysodium-java</module>
     <module>com.hubspot.jinjava.jinjava</module>
     <module>com.igormaznitsa.jbbp</module>

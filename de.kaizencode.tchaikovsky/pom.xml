@@ -44,15 +44,15 @@
             <configuration>
               <target>
                 <mkdir dir="target/classes/lib/arm/linux" />
-                <get src="https://dl.bintray.com/j-n-k/openhab-3rdparty-contrib/arm/linux/liballjoyn_java.so" dest="target/classes/lib/arm/linux/liballjoyn_java.so" />
+                <get src="https://openhab.jfrog.io/artifactory/files/alljoyn/arm/linux/liballjoyn_java.so" dest="target/classes/lib/arm/linux/liballjoyn_java.so" />
                 <mkdir dir="target/classes/lib/x86/linux" />
-                <get src="https://dl.bintray.com/j-n-k/openhab-3rdparty-contrib/x86/linux/liballjoyn_java.so" dest="target/classes/lib/x86/linux/liballjoyn_java.so" />
+                <get src="https://openhab.jfrog.io/artifactory/files/alljoyn/x86/linux/liballjoyn_java.so" dest="target/classes/lib/x86/linux/liballjoyn_java.so" />
                 <mkdir dir="target/classes/lib/x86-64/linux" />
-                <get src="https://dl.bintray.com/j-n-k/openhab-3rdparty-contrib/x86-64/linux/liballjoyn_java.so" dest="target/classes/lib/x86-64/linux/liballjoyn_java.so" />
+                <get src="https://openhab.jfrog.io/artifactory/files/alljoyn/x86-64/linux/liballjoyn_java.so" dest="target/classes/lib/x86-64/linux/liballjoyn_java.so" />
                 <mkdir dir="target/classes/lib/x86/win" />
-                <get src="https://dl.bintray.com/j-n-k/openhab-3rdparty-contrib/x86/win/alljoyn_java.dll" dest="target/classes/lib/x86/win/alljoyn_java.dll" />
+                <get src="https://openhab.jfrog.io/artifactory/files/alljoyn/x86/win/alljoyn_java.dll" dest="target/classes/lib/x86/win/alljoyn_java.dll" />
                 <mkdir dir="target/classes/lib/x86-64/win" />
-                <get src="https://dl.bintray.com/j-n-k/openhab-3rdparty-contrib/x86-64/win/alljoyn_java.dll" dest="target/classes/lib/x86-64/win/alljoyn_java.dll" />
+                <get src="https://openhab.jfrog.io/artifactory/files/alljoyn/x86-64/win/alljoyn_java.dll" dest="target/classes/lib/x86-64/win/alljoyn_java.dll" />
               </target>
             </configuration>
           </execution>

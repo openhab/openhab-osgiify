@@ -55,13 +55,11 @@
     <module>de.zazaz.iot.bosch.indego.bosch-indego-controller-lib</module>
     <module>fr.bmartel.http-endec</module>
     <module>fr.bmartel.jspeedtest</module>
-    <module>io.moquette.moquette-broker</module>
     <module>io.socket.engine.io-client</module>
     <module>io.socket.socket.io-client</module>
     <module>javazoom.jlayer</module>
     <module>net.vrallev.ecc.ecc-25519-java</module>
     <module>org.cups4j.cups4j</module>
-    <module>org.java-websocket.java-websocket</module>
     <module>org.json.json</module>
     <module>org.pcap4j.pcap4j-core</module>
     <module>org.pcap4j.pcap4j-packetfactory-static</module>

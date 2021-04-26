@@ -60,7 +60,6 @@
     <module>io.moquette.moquette-broker</module>
     <module>io.socket.engine.io-client</module>
     <module>io.socket.socket.io-client</module>
-    <module>intel-iot-devkit.tinyb</module>
     <module>javazoom.jlayer</module>
     <module>net.vrallev.ecc.ecc-25519-java</module>
     <module>net.wimpi.jamod</module>

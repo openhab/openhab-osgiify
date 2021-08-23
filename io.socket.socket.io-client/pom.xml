@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>io.socket.socket.io-client</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 
   <name>IO.Socket Socket Client</name>
 

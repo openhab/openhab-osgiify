@@ -14,7 +14,7 @@ https://github.com/openhab/openhab-osgiify
 
 == Third-party Content
 
-directory-watcher
+aws-java-sdk-core
 * License: Apache 2.0 License
-* Project: https://github.com/gmethvin/directory-watcher
-* Source:  https://github.com/gmethvin/directory-watcher
+* Project: https://aws.amazon.com/sdk-for-java/
+* Source:  https://github.com/aws/aws-sdk-java/tree/master/aws-java-sdk-core

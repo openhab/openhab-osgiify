@@ -1,0 +1,13 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: APL License
+Bundle-Version: ${project.version}
+Import-Package: \
+  com.sun.nio.file.*;resolution:="optional", \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+-includeresource: \
+  NOTICE
+

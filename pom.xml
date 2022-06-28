@@ -55,6 +55,7 @@
     <module>de.zazaz.iot.bosch.indego.bosch-indego-controller-lib</module>
     <module>fr.bmartel.http-endec</module>
     <module>fr.bmartel.jspeedtest</module>
+    <module>io.methvin.directory-watcher</module>
     <module>io.socket.engine.io-client</module>
     <module>io.socket.socket.io-client</module>
     <module>javazoom.jlayer</module>

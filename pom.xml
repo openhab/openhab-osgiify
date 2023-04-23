@@ -60,6 +60,7 @@
     <module>io.socket.socket.io-client</module>
     <module>javazoom.jlayer</module>
     <module>net.vrallev.ecc.ecc-25519-java</module>
+    <module>org.eclipse.equinox.common</module>
     <module>org.cups4j.cups4j</module>
     <module>org.json.json</module>
     <module>org.pcap4j.pcap4j-core</module>

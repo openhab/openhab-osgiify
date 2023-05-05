@@ -52,7 +52,6 @@
     <module>com.squareup.okio.okio</module>
     <module>com.squareup.retrofit.retrofit</module>
     <module>de.kaizencode.tchaikovsky</module>
-    <module>de.zazaz.iot.bosch.indego.bosch-indego-controller-lib</module>
     <module>fr.bmartel.http-endec</module>
     <module>fr.bmartel.jspeedtest</module>
     <module>io.methvin.directory-watcher</module>

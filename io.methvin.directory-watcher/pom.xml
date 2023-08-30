@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>io.methvin.directory-watcher</artifactId>
-  <version>0.17.1</version>
+  <version>0.18.0</version>
 
   <name>Directory-Watcher</name>
 

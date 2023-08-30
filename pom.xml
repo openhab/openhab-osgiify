@@ -92,7 +92,7 @@
         <!-- always clean before downloading -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.3.1</version>
           <executions>
             <execution>
               <id>auto-clean</id>
@@ -105,7 +105,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.3.0</version>
+          <version>3.6.0</version>
           <executions>
             <!-- unpack dependency -->
             <execution>
@@ -178,7 +178,7 @@ Bundle-SymbolicName: ${project.artifactId}]]></bnd>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
-          <version>3.3.0</version>
+          <version>3.4.0</version>
           <executions>
             <execution>
               <id>attach-sources</id>

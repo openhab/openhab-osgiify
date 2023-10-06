@@ -82,7 +82,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <bnd.version>6.4.0</bnd.version>
+    <bnd.version>7.0.0</bnd.version>
     <origin.version>${project.version}</origin.version>
   </properties>
 

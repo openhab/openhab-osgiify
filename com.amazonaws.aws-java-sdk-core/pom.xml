@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>com.amazonaws.aws-java-sdk-core</artifactId>
-  <version>1.11.490</version>
+  <version>1.12.626</version>
 
   <name>Amazon AWS Core</name>
 

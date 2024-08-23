@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.openhab.osgiify</groupId>
+    <artifactId>org.openhab.reactor.osgiify</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <artifactId>com.oracle.database.jdbc.ojdbc11</artifactId>
+  <version>23.5.0.2407</version>
+
+  <name>Oracle JDBC 4.3 driver</name>
+
+  <properties>
+    <origin.groupId>com.oracle.database.jdbc</origin.groupId>
+    <origin.artifactId>ojdbc11</origin.artifactId>
+    <origin.version>23.5.0.24.07</origin.version>
+  </properties>
+
+</project>

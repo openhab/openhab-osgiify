@@ -47,6 +47,7 @@
     <module>com.microsoft.azure.sdk.iot.iot-device-client</module>
     <module>com.microsoft.azure.sdk.iot.iot-service-client</module>
     <module>com.nimbusds.srp6a</module>
+    <module>com.oracle.database.jdbc.ojdbc11</module>
     <module>com.pi4j.pi4j-gpio-extension</module>
     <module>com.squareup.okhttp.okhttp</module>
     <module>com.squareup.okio.okio</module>

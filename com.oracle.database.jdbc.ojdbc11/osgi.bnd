@@ -21,6 +21,7 @@ Import-Package: \
 	org.graalvm.*;'resolution:'=optional,\
 	org.objectweb.*;'resolution:'=optional,\
 	sun.security.krb5.internal;'resolution:'=optional,\
+	com.sun.security.jgss;'resolution:'=optional,\
 	weblogic.transaction;'resolution:'=optional,\
 	*
 Export-Package: \

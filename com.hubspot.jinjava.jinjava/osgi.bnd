@@ -3,11 +3,11 @@ Bundle-Name: ${project.name}
 Bundle-License: Apache 2.0 License
 Bundle-Version: ${project.version}
 Import-Package: \
-  javax.annotation.*;resolution:=optional; \
-  com.googlecode.ipv6.*;resolution:=optional; \
+  javax.annotation.*;resolution:="optional", \
+  com.googlecode.ipv6.*;resolution:="optional", \
   *
 Export-Package: \
   !NOTICE, \
-  *;version=${project.version}
+  *;version=${origin.version}
 -includeresource: \
   NOTICE

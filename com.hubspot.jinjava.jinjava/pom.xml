@@ -10,14 +10,14 @@
   </parent>
 
   <artifactId>com.hubspot.jinjava.jinjava</artifactId>
-  <version>2.7.2_0</version>
+  <version>2.7.3_0</version>
 
   <name>Jinjava</name>
 
   <properties>
     <origin.groupId>com.hubspot.jinjava</origin.groupId>
     <origin.artifactId>jinjava</origin.artifactId>
-    <origin.version>2.7.2</origin.version>
+    <origin.version>2.7.3</origin.version>
   </properties>
 
 </project>

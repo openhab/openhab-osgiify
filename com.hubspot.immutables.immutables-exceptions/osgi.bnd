@@ -1,0 +1,13 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: Apache 2.0 License
+Bundle-Version: ${project.version}
+Import-Package: \
+  javax.annotation.*;resolution:="optional", \
+  com.googlecode.ipv6.*;resolution:="optional", \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${origin.version}
+-includeresource: \
+  NOTICE

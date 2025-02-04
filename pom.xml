@@ -94,7 +94,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <bnd.version>7.1.0</bnd.version>
     <origin.version>${project.version}</origin.version>
-    <graalvm.version>24.1.1</graalvm.version>
+    <graalvm.version>24.1.2</graalvm.version>
   </properties>
 
   <build>

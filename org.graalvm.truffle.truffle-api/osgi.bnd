@@ -1,0 +1,17 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: Universal Permissive License, Version 1.0
+Bundle-Version: ${project.version}
+Import-Package: \
+  com.sun.management;resolution:="optional", \
+  jdk.internal.reflect;resolution:="optional", \
+  sun.reflect;resolution:="optional", \
+  com.oracle.truffle.runtime;resolution:="optional", \
+  org.graalvm.*;resolution:="optional", \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+-includeresource: \
+  NOTICE
+

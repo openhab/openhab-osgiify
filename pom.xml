@@ -63,6 +63,10 @@
     <module>javazoom.jlayer</module>
     <module>net.vrallev.ecc.ecc-25519-java</module>
     <module>org.cups4j.cups4j</module>
+    <module>org.graalvm.sdk.collections</module>
+    <module>org.graalvm.sdk.jniutils</module>
+    <module>org.graalvm.sdk.nativeimage</module>
+    <module>org.graalvm.sdk.word</module>
     <module>org.json.json</module>
     <module>org.pcap4j.pcap4j-core</module>
     <module>org.pcap4j.pcap4j-packetfactory-static</module>
@@ -87,6 +91,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <bnd.version>7.1.0</bnd.version>
     <origin.version>${project.version}</origin.version>
+    <graalvm.version>24.1.1</graalvm.version>
   </properties>
 
   <build>

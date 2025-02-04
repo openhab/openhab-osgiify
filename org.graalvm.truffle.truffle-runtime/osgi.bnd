@@ -8,6 +8,7 @@ Import-Package: \
   jdk.jfr;resolution:="optional", \
   jdk.vm.ci.*;resolution:="optional", \
   org.graalvm.*;resolution:="optional", \
+  com.oracle.truffle.*;resolution:="optional", \
   *
 Export-Package: \
   !NOTICE, \

@@ -67,6 +67,7 @@
     <module>org.graalvm.sdk.jniutils</module>
     <module>org.graalvm.sdk.nativeimage</module>
     <module>org.graalvm.sdk.word</module>
+    <module>org.graalvm.shadowed.icu4j</module>
     <module>org.json.json</module>
     <module>org.pcap4j.pcap4j-core</module>
     <module>org.pcap4j.pcap4j-packetfactory-static</module>

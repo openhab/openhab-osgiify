@@ -1,0 +1,15 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: Universal Permissive License, Version 1.0
+Bundle-Version: ${project.version}
+Import-Package: \
+  org.graalvm.collections.*;version=${project.version}, \
+  org.graalvm.nativeimage.*;version=${project.version}, \
+  org.graalvm.polyglot.*;version=${project.version}, \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+-includeresource: \
+  NOTICE
+

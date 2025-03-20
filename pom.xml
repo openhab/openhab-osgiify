@@ -68,6 +68,7 @@
     <module>org.graalvm.sdk.nativeimage</module>
     <module>org.graalvm.sdk.word</module>
     <module>org.graalvm.shadowed.icu4j</module>
+    <module>org.graalvm.shadowed.xz</module>
     <module>org.graalvm.truffle.truffle-compiler</module>
     <module>org.graalvm.truffle.truffle-runtime</module>
     <module>org.json.json</module>
@@ -94,7 +95,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <bnd.version>7.1.0</bnd.version>
     <origin.version>${project.version}</origin.version>
-    <graalvm.version>24.1.2</graalvm.version>
+    <graalvm.version>24.2.0</graalvm.version>
   </properties>
 
   <build>

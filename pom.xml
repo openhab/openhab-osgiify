@@ -68,6 +68,7 @@
     <module>org.graalvm.sdk.nativeimage</module>
     <module>org.graalvm.sdk.word</module>
     <module>org.graalvm.shadowed.icu4j</module>
+    <module>org.graalvm.shadowed.xz</module>
     <module>org.graalvm.truffle.truffle-compiler</module>
     <module>org.graalvm.truffle.truffle-runtime</module>
     <module>org.json.json</module>

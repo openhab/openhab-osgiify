@@ -1,0 +1,28 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: Universal Permissive License, Version 1.0
+Bundle-Version: ${project.version}
+Import-Package: \
+  jdk.internal.access;resolution:="optional", \
+  jdk.internal.module;resolution:="optional", \
+  jdk.internal.reflect;resolution:="optional", \
+  jdk.jfr;resolution:="optional", \
+  org.graalvm.*;resolution:="optional", \
+  com.oracle.truffle.*;resolution:="optional", \
+  sun.reflect;resolution:="optional", \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+Require-Capability: \
+  osgi.extender;filter:="(osgi.extender=osgi.serviceloader.registrar)", \
+  osgi.extender;filter:="(osgi.extender=osgi.serviceloader.processor)", \
+  osgi.serviceloader; \
+    filter:="(osgi.serviceloader=com.oracle.truffle.api.provider.TruffleLanguageProvider)"; \
+    cardinality:=multiple, \
+  osgi.serviceloader; \
+    filter:="(osgi.serviceloader=com.oracle.truffle.api.provider.InternalResourceProvider)"; \
+    cardinality:=multiple
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="org.graalvm.polyglot.impl.AbstractPolyglotImpl"
+-includeresource: \
+  NOTICE

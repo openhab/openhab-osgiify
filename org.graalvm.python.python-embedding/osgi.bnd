@@ -1,0 +1,15 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: Unicode/ICU License
+Bundle-Version: ${project.version}
+Import-Package: \
+  org.graalvm.*;resolution:="optional", \
+  *
+Import-Package: \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+-includeresource: \
+  NOTICE
+

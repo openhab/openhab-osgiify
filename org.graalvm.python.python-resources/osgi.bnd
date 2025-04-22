@@ -1,0 +1,13 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: Unicode/ICU License
+Bundle-Version: ${project.version}
+Import-Package: \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.serviceloader.registrar)"
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="com.oracle.truffle.api.provider.InternalResourceProvider"  
+-includeresource: \
+  NOTICE

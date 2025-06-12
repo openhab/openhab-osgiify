@@ -10,3 +10,4 @@ Export-Package: \
   *;version=${project.version}
 -includeresource: \
   NOTICE
+

@@ -15,4 +15,3 @@ Require-Capability: \
     cardinality:=multiple
 -includeresource: \
   NOTICE
-

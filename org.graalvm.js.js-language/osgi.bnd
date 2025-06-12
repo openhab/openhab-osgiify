@@ -3,10 +3,7 @@ Bundle-Name: ${project.name}
 Bundle-License: Universal Permissive License, Version 1.0
 Bundle-Version: ${project.version}
 Import-Package: \
-  com.sun.security.auth;resolution:="optional", \
-  com.sun.security.auth.module;resolution:="optional", \
   com.sun.management;resolution:="optional", \
-  org.apache.arrow.vector;resolution:="optional", \
   *
 Export-Package: \
   !NOTICE, \

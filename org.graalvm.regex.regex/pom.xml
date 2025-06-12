@@ -12,7 +12,7 @@
   <artifactId>org.graalvm.regex.regex</artifactId>
   <version>${graalvm.version}</version>
 
-  <name>GraalVM :: Regex :: Regex</name>
+  <name>GraalVM :: Regex :: TRegex</name>
 
   <properties>
     <origin.groupId>org.graalvm.regex</origin.groupId>

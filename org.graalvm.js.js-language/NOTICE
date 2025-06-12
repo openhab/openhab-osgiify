@@ -15,6 +15,6 @@ https://github.com/openhab/openhab-osgiify
 == Third-party Content
 
 polyglot
-* License: Universal Permissive License
+* License: Universal Permissive License, Version 1.0
 * Project: http://www.graalvm.org
 * Source:  https://github.com/oracle/graaljs

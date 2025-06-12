@@ -64,6 +64,7 @@
     <module>net.vrallev.ecc.ecc-25519-java</module>
     <module>org.cups4j.cups4j</module>
     <module>org.graalvm.js.js-language</module>
+    <module>org.graalvm.js.js-scriptengine</module>
     <module>org.graalvm.llvm.llvm-api</module>
     <module>org.graalvm.polyglot.polyglot</module>
     <module>org.graalvm.python.python-embedding</module>

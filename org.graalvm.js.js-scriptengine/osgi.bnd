@@ -3,12 +3,11 @@ Bundle-Name: ${project.name}
 Bundle-License: Universal Permissive License, Version 1.0
 Bundle-Version: ${project.version}
 Import-Package: \
-  jdk.jfr;resolution:="optional", \
-  jdk.vm.ci.*;resolution:="optional", \
   *
 Export-Package: \
   !NOTICE, \
   *;version=${project.version}
+Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.serviceloader.registrar)"
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="com.oracle.truffle.api.provider.TruffleLanguageProvider"  
 -includeresource: \
   NOTICE
-

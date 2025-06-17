@@ -1,0 +1,17 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: Universal Permissive License, Version 1.0
+Bundle-Version: ${project.version}
+Import-Package: \
+  com.sun.security.auth;resolution:="optional", \
+  com.sun.security.auth.module;resolution:="optional", \
+  com.sun.management;resolution:="optional", \
+  org.apache.arrow.vector;resolution:="optional", \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.serviceloader.registrar)"
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="com.oracle.truffle.api.provider.TruffleLanguageProvider"  
+-includeresource: \
+  NOTICE

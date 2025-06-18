@@ -107,6 +107,16 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <bnd.version>7.1.0</bnd.version>
     <origin.version>${project.version}</origin.version>
+    <!--
+      When updating this, remove the extra optional dependencies from
+      org.graalvm.truffle.truffle-runtime/osgi.bnd as was done at
+      https://github.com/openhab/openhab-osgiify/pull/61/files#diff-72d54f6aa7985a49f5c2bdf53810609701809e95bc69fe8d99e670771157ed92.
+      Those imports no longer need to be optional, but this version is still
+      used by milestone builds of openHAB 5.0 that _do_ need them to be optional.
+      It's not a problem for them to be optional, so just leave them that way
+      until we update GraalVM, instead of doing a special re-package version number
+      of that bundle.      
+    -->
     <graalvm.version>24.2.0</graalvm.version>
   </properties>
 

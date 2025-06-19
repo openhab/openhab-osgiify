@@ -3,11 +3,8 @@ Bundle-Name: ${project.name}
 Bundle-License: Universal Permissive License, Version 1.0
 Bundle-Version: ${project.version}
 Import-Package: \
-  jdk.internal.module;resolution:="optional", \
   jdk.jfr;resolution:="optional", \
   jdk.vm.ci.*;resolution:="optional", \
-  org.graalvm.*;resolution:="optional", \
-  com.oracle.truffle.*;resolution:="optional", \
   *
 Export-Package: \
   !NOTICE, \

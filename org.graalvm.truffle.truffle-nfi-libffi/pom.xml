@@ -12,7 +12,7 @@
   <artifactId>org.graalvm.truffle.truffle-nfi-libffi</artifactId>
   <version>${graalvm.version}</version>
 
-  <name>GraalVM :: Truffle :: NFI :: LIBFFI</name>
+  <name>GraalVM :: Truffle :: NFI :: LibFFI</name>
 
   <properties>
     <origin.groupId>org.graalvm.truffle</origin.groupId>

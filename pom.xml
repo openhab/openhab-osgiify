@@ -82,6 +82,7 @@
     <module>org.graalvm.truffle.truffle-api</module>
     <module>org.graalvm.truffle.truffle-compiler</module>
     <module>org.graalvm.truffle.truffle-nfi</module>
+    <module>org.graalvm.truffle.truffle-nfi-libffi</module>
     <module>org.graalvm.truffle.truffle-runtime</module>
     <module>org.json.json</module>
     <module>org.pcap4j.pcap4j-core</module>

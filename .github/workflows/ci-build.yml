@@ -19,7 +19,6 @@ jobs:
       fail-fast: false
       matrix:
         java: [ '21' ]
-        maven: [ '3.9.10']
         os: [ 'ubuntu-24.04' ]
     name: Build (Java ${{ matrix.java }}, ${{ matrix.os }})
     runs-on: ${{ matrix.os }}
@@ -50,11 +49,6 @@ jobs:
           distribution: 'temurin'
           java-version: ${{ matrix.java }}
 
-      - name: Set up Maven ${{ matrix.maven }}
-        uses: stCarolas/setup-maven@v5
-        with:
-          maven-version: ${{ matrix.maven }}
-
       - name: Build
         id: build
         run: './.github/scripts/maven-build'
@@ -72,9 +66,14 @@ jobs:
           name: build-log-java-${{ matrix.java }}-${{ matrix.os }}
           path: build.log
 
+      # this will identify modifications to files under source control during the workflow run;
+      # untracked files will be included as well!
       - name: Verify Changed Files
-        uses: tj-actions/verify-changed-files@v20
         id: verify-changed-files
+        run: |
+          set -o pipefail
+          changed_files=$(echo -n "$(git diff --name-only HEAD && git ls-files --others --exclude-standard)"|tr '\n' ' ')
+          echo "changed_files=$changed_files" >> $GITHUB_OUTPUT
 
       - name: Fail on Changed Files
         if: steps.verify-changed-files.outputs.changed_files != ''

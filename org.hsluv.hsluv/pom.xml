@@ -9,7 +9,7 @@
     <version>1.0.0</version>
   </parent>
 
-  <artifactId>hsluv</artifactId>
+  <artifactId>org.hsluv.hsluv</artifactId>
   <version>0.2</version>
 
   <name>hsluv</name>

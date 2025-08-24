@@ -90,6 +90,7 @@
     <module>org.pcap4j.pcap4j-packetfactory-static</module>
     <module>org.zeromq.curve25519-java</module>
     <module>si.uom-si-units</module>
+    <module>si.uom-si-quantity</module>
   </modules>
 
   <scm>

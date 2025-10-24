@@ -11,7 +11,7 @@
 
   <artifactId>aws-iot-device-sdk</artifactId>
   <version>1.27.4</version>
-  <name>AWS IoT Device SDK OSGiified</name>
+  <name>AWS IoT Device SDK</name>
 
   <properties>
     <origin.groupId>software.amazon.awssdk.iotdevicesdk</origin.groupId>

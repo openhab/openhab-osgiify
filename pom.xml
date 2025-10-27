@@ -31,6 +31,7 @@
   </licenses>
 
   <modules>
+    <module>com.amazonaws.aws-iot-device-sdk</module>
     <module>com.amazonaws.aws-java-sdk-core</module>
     <module>com.amazonaws.aws-java-sdk-polly</module>
     <module>com.firebase.tubesock</module>

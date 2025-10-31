@@ -31,7 +31,6 @@
   </licenses>
 
   <modules>
-    <module>com.amazonaws.aws-iot-device-sdk</module>
     <module>com.amazonaws.aws-java-sdk-core</module>
     <module>com.amazonaws.aws-java-sdk-polly</module>
     <module>com.firebase.tubesock</module>
@@ -93,6 +92,7 @@
     <module>org.zeromq.curve25519-java</module>
     <module>si.uom-si-units</module>
     <module>si.uom-si-quantity</module>
+    <module>software.amazon.awssdk.iotdevicesdk.aws-iot-device-sdk</module>
   </modules>
 
   <scm>

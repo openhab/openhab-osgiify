@@ -78,6 +78,7 @@
     <module>org.graalvm.shadowed.icu4j</module>
     <module>org.graalvm.shadowed.json</module>
     <module>org.graalvm.shadowed.xz</module>
+    <module>org.graalvm.tools.chromeinspector-tool</module>
     <module>org.graalvm.tools.profiler-tool</module>
     <module>org.graalvm.truffle.truffle-api</module>
     <module>org.graalvm.truffle.truffle-compiler</module>

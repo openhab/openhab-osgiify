@@ -111,6 +111,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <bnd.version>7.2.1</bnd.version>
+    <origin.groupId>unknown</origin.groupId>
+    <origin.artifactId>unknown</origin.artifactId>
     <origin.version>${project.version}</origin.version>
     <graalvm.version>25.0.1</graalvm.version>
   </properties>

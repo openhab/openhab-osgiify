@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>org.igniterealtime.smack.smack-core</artifactId>
-  <version>4.5.0-beta6</version>
+  <version>4.5.0-rc1</version>
 
   <name>smack-core</name>
 

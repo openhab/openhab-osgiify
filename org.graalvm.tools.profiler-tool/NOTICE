@@ -14,7 +14,7 @@ https://github.com/openhab/openhab-osgiify
 
 == Third-party Content
 
-polyglot
-* License: Universal Permissive License, Version 1.0
+profiler-tool
+* License: GNU General Public License, version 2, with the Classpath Exception
 * Project: http://www.graalvm.org
 * Source:  https://github.com/oracle/graal

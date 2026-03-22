@@ -1,0 +1,13 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: GNU General Public License, version 2, with the Classpath Exception
+Bundle-Version: ${project.version}
+Import-Package: \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.serviceloader.registrar)"
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="com.oracle.truffle.api.instrumentation.provider.TruffleInstrumentProvider"
+-includeresource: \
+  NOTICE

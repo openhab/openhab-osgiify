@@ -18,6 +18,10 @@ Require-Capability: \
     filter:="(osgi.serviceloader=com.oracle.truffle.api.provider.TruffleLanguageProvider)"; \
     cardinality:=multiple, \
   osgi.serviceloader; \
+    filter:="(osgi.serviceloader=com.oracle.truffle.api.instrumentation.provider.TruffleInstrumentProvider)"; \
+    cardinality:=multiple; \
+    resolution:="optional"
+  osgi.serviceloader; \
     filter:="(osgi.serviceloader=com.oracle.truffle.api.provider.InternalResourceProvider)"; \
     cardinality:=multiple; \
     resolution:="optional"

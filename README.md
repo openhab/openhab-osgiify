@@ -15,7 +15,7 @@ See the NOTICE file in each directory.
 > Subsequently, the Mediator is also used on the consuming end for the bundles that use ServiceLoader.load to re-write that code on-the-fly to query from the OSGi service registry instead.
 > This is managed via additional headers in the osgi.bnd files as appropriate.
 > The caveat to this process is that because these bundles aren't truly aware of OSGi's dynamic loading, they just assume that all services will be available when they start up, and can't be notified of (optional) bundles that start afterwards.
-> Due to this, any feature that makes use of GraalVM needs to adjust bundle start levels to ensure the approriate dependencies are available in the correct order:
-> - Any bundle that provides a language or resources needs to load at start level 78 (before truffle-api)
+> Due to this, any feature that makes use of GraalVM needs to adjust bundle start levels to ensure the appropriate dependencies are available in the correct order:
+> - Any bundle that provides a language, an instrument, or resources needs to load at start level 78 (before truffle-api)
 > - Truffle API needs to load at start level 79 (before polyglot)
 > - The rest of the bundles can load at their default start level 80

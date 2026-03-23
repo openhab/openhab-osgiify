@@ -9,6 +9,6 @@ Export-Package: \
   !NOTICE, \
   *;version=${project.version}
 Require-Capability: osgi.extender;filter:="(osgi.extender=osgi.serviceloader.registrar)"
-Provide-Capability: osgi.serviceloader;osgi.serviceloader="com.oracle.truffle.api.provider.TruffleLanguageProvider"  
+Provide-Capability: osgi.serviceloader;osgi.serviceloader="com.oracle.truffle.api.provider.TruffleLanguageProvider"
 -includeresource: \
   NOTICE

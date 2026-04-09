@@ -93,7 +93,7 @@
     <module>org.zeromq.curve25519-java</module>
     <module>si.uom-si-units</module>
     <module>si.uom-si-quantity</module>
-    <module>software.amazon.awssdk.iotdevicesdk.aws-iot-device-sdk</module>
+    <module>software.amazon.awssdk.crt.aws-crt</module>
   </modules>
 
   <scm>

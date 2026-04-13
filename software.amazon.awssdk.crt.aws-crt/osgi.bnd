@@ -3,10 +3,12 @@ Bundle-Name: ${project.name}
 Bundle-License: Apache 2.0 License
 Bundle-Version: ${project.version}
 Import-Package: \
+  !org.graalvm.nativeimage.hosted, \
   *
+
 Export-Package: \
   !NOTICE, \
   *;version=${project.version}
+
 -includeresource: \
   NOTICE
-

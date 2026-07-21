@@ -5,6 +5,9 @@ Bundle-Version: ${project.version}
 Import-Package: \
   javax.annotation.*;resolution:="optional", \
   com.googlecode.ipv6.*;resolution:="optional", \
+  android.os;resolution:=optional, \
+  com.google.appengine.api.*;resolution:="optional", \
+  com.google.apphosting.api.*;resolution:="optional", \
   *
 Export-Package: \
   !NOTICE, \

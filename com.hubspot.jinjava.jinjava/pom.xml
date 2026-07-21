@@ -20,4 +20,27 @@
     <origin.version>2.8.3</origin.version>
   </properties>
 
+  <dependencies>
+    <dependency>
+      <groupId>com.hubspot</groupId>
+      <artifactId>algebra</artifactId>
+      <version>1.7.2</version>
+      <exclusions>
+        <!-- Don't include Jackson dependencies in the bundle jar; we'll use openHAB's versions of Jackson bundle -->
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-core</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-annotations</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+
 </project>

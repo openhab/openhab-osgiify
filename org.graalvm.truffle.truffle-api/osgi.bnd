@@ -3,6 +3,7 @@ Bundle-Name: ${project.name}
 Bundle-License: Universal Permissive License, Version 1.0
 Bundle-Version: ${project.version}
 Import-Package: \
+  org.graalvm.nativebridge;resolution:="optional", \
   jdk.internal.access;resolution:="optional", \
   jdk.internal.module;resolution:="optional", \
   jdk.internal.reflect;resolution:="optional", \

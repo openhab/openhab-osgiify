@@ -12,7 +12,7 @@
   <artifactId>org.graalvm.compiler.compiler</artifactId>
   <version>${graalvm.version}</version>
 
-  <name>GraalVM :: Compiler</name>
+  <name>GraalVM :: Compiler :: Compiler</name>
 
   <properties>
     <origin.groupId>org.graalvm.compiler</origin.groupId>

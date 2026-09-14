@@ -3,11 +3,13 @@ Bundle-Name: ${project.name}
 Bundle-License: Universal Permissive License, Version 1.0
 Bundle-Version: ${project.version}
 Import-Package: \
+  com.sun.management;resolution:="optional", \
+  jdk.graal.compiler.*;resolution:="optional", \
   jdk.internal.access;resolution:="optional", \
   jdk.internal.module;resolution:="optional", \
   jdk.internal.reflect;resolution:="optional", \
+  org.graalvm.nativebridge;resolution:="optional", \
   sun.reflect;resolution:="optional", \
-  com.sun.management;resolution:="optional", \
   *
 Export-Package: \
   !NOTICE, \

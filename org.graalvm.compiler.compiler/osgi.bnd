@@ -4,6 +4,8 @@ Bundle-License: GNU General Public License, version 2, with the Classpath Except
 Bundle-Version: ${project.version}
 Import-Package: \
   jdk.vm.ci.*;resolution:="optional", \
+  jdk.internal.misc;resolution:="optional", \
+  jdk.internal.vm;resolution:="optional", \
   *
 Export-Package: \
   !NOTICE, \

@@ -6,6 +6,7 @@ Import-Package: \
   com.sun.management;resolution:="optional", \
   jdk.graal.compiler.*;resolution:="optional", \
   jdk.internal.access;resolution:="optional", \
+  jdk.internal.misc;resolution:="optional", \
   jdk.internal.module;resolution:="optional", \
   jdk.internal.reflect;resolution:="optional", \
   org.graalvm.nativebridge;resolution:="optional", \

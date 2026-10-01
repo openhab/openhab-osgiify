@@ -45,6 +45,7 @@
     <module>com.hubspot.immutables.immutables-exceptions</module>
     <module>com.hubspot.jinjava.jinjava</module>
     <module>com.igormaznitsa.jbbp</module>
+    <module>com.io7m.flannel.core</module>
     <module>com.microsoft.azure.azure-eventhubs</module>
     <module>com.microsoft.azure.sdk.iot.iot-device-client</module>
     <module>com.microsoft.azure.sdk.iot.iot-service-client</module>

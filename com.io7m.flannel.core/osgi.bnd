@@ -1,0 +1,23 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: LGPL v2.1 License
+Bundle-Version: ${project.version}
+Import-Package: \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+Require-Capability: \
+  osgi.extender;filter:="(osgi.extender=osgi.serviceloader.registrar)"
+Provide-Capability: \
+  osgi.serviceloader; \
+    osgi.serviceloader=javax.sound.sampled.spi.AudioFileReader; \
+    register:="com.io7m.flannel.jflac.spi.FlacAudioFileReader", \
+  osgi.serviceloader; \
+    osgi.serviceloader=javax.sound.sampled.spi.AudioFileWriter; \
+    register:="com.io7m.flannel.javaflacencoder.FLACFileWriter", \
+  osgi.serviceloader; \
+    osgi.serviceloader=javax.sound.sampled.spi.FormatConversionProvider; \
+    register:="com.io7m.flannel.jflac.spi.FlacFormatConversionProvider"
+-includeresource: \
+  NOTICE

@@ -12,7 +12,7 @@
   <artifactId>javazoom.jlayer</artifactId>
   <version>1.0.1</version>
 
-  <name>Javazoom JLayer</name>
+  <name>Javazoom :: JLayer</name>
 
   <properties>
     <origin.groupId>javazoom</origin.groupId>

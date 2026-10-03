@@ -14,7 +14,7 @@ https://github.com/openhab/openhab-osgiify
 
 == Third-party Content
 
-netty
-* License: Apache 2.0 license
-* Project: http://netty.io
-* Source:  https://github.com/netty/netty
+jlayer
+* License: LGPL v2.1 license
+* Project: https://web.archive.org/web/20210108055829/http://www.javazoom.net/javalayer/javalayer.html
+* Source:  https://github.com/pdudits/soundlibs/tree/master/jlayer

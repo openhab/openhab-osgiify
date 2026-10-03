@@ -14,13 +14,7 @@ Provide-Capability: \
     osgi.serviceloader=javax.sound.sampled.spi.AudioFileReader; \
     register:="javazoom.spi.mpeg.sampled.file.MpegAudioFileReader", \
   osgi.serviceloader; \
-    osgi.serviceloader=javax.sound.sampled.spi.AudioFileWriter; \
-    register:="vavi.sound.sampled.mp3.MpegAudioFileWriter", \
-  osgi.serviceloader; \
     osgi.serviceloader=javax.sound.sampled.spi.FormatConversionProvider; \
-    register:="javazoom.spi.mpeg.sampled.convert.MpegFormatConversionProvider", \
-  osgi.serviceloader; \
-    osgi.serviceloader=javax.sound.sampled.spi.FormatConversionProvider; \
-    register:="vavi.sound.sampled.mp3.Mp3LameFormatConversionProvider"
+    register:="javazoom.spi.mpeg.sampled.convert.MpegFormatConversionProvider"
 -includeresource: \
   NOTICE

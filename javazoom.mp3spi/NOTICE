@@ -14,7 +14,7 @@ https://github.com/openhab/openhab-osgiify
 
 == Third-party Content
 
-mp3spi
+MP3SPI
 * License: LGPL v2.1 license
 * Project: https://web.archive.org/web/20210108055829/http://www.javazoom.net/mp3spi/mp3spi.html
-* Source:  https://github.com/umjammer/mp3spi
+* Source:  https://github.com/pdudits/soundlibs/tree/master/mp3spi

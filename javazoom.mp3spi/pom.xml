@@ -10,12 +10,12 @@
     </parent>
 
     <artifactId>javazoom.mp3spi</artifactId>
-    <version>1.9.17</version>
+    <version>1.9.5.4</version>
 
     <name>Javazoom :: MP3SPI</name>
 
     <properties>
-        <origin.groupId>com.github.umjammer</origin.groupId>
+        <origin.groupId>com.googlecode.soundlibs</origin.groupId>
         <origin.artifactId>mp3spi</origin.artifactId>
     </properties>
 

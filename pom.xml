@@ -63,6 +63,7 @@
     <module>io.socket.socket.io-client</module>
     <module>javazoom.jlayer</module>
     <module>javazoom.mp3spi</module>
+    <module>javazoom.vorbisspi</module>
     <module>net.sourceforge.lame</module>
     <module>net.vrallev.ecc.ecc-25519-java</module>
     <module>org.cups4j.cups4j</module>

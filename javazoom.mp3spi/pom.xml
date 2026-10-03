@@ -10,6 +10,8 @@
     </parent>
 
     <artifactId>javazoom.mp3spi</artifactId>
+    <!-- https://github.com/umjammer/mp3spi provides a maintained version with encoding support,
+         however pulls this in a lot of dependencies. Stay on this old version for now. -->
     <version>1.9.5.4</version>
 
     <name>Javazoom :: MP3SPI</name>

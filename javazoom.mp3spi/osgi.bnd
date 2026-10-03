@@ -1,0 +1,20 @@
+Bundle-Description: OSGi-ified version of ${project.name}
+Bundle-Name: ${project.name}
+Bundle-License: LGPL v2.1 License
+Bundle-Version: ${project.version}
+Import-Package: \
+  *
+Export-Package: \
+  !NOTICE, \
+  *;version=${project.version}
+Require-Capability: \
+  osgi.extender;filter:="(osgi.extender=osgi.serviceloader.registrar)"
+Provide-Capability: \
+  osgi.serviceloader; \
+    osgi.serviceloader=javax.sound.sampled.spi.AudioFileReader; \
+    register:="javazoom.spi.mpeg.sampled.file.MpegAudioFileReader", \
+  osgi.serviceloader; \
+    osgi.serviceloader=javax.sound.sampled.spi.FormatConversionProvider; \
+    register:="javazoom.spi.mpeg.sampled.convert.MpegFormatConversionProvider"
+-includeresource: \
+  NOTICE

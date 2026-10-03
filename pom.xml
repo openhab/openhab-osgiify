@@ -62,6 +62,7 @@
     <module>io.socket.engine.io-client</module>
     <module>io.socket.socket.io-client</module>
     <module>javazoom.jlayer</module>
+    <module>javazoom.mp3spi</module>
     <module>net.vrallev.ecc.ecc-25519-java</module>
     <module>org.cups4j.cups4j</module>
     <module>org.graalvm.js.js-language</module>

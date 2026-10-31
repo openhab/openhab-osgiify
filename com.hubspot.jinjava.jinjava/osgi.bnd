@@ -8,9 +8,13 @@ Import-Package: \
   android.os;resolution:=optional, \
   com.google.appengine.api.*;resolution:="optional", \
   com.google.apphosting.api.*;resolution:="optional", \
+  org.jspecify.annotations;resolution:="optional", \
   *
 Export-Package: \
   !NOTICE, \
-  *;version=${origin.version}
+  com.hubspot.jinjava.*;jinjava.*;version=${origin.version}
+-conditionalpackage: \
+  com.hubspot.algebra.*, \
+  com.hubspot.immutables.*
 -includeresource: \
   NOTICE

@@ -10,12 +10,12 @@
   </parent>
 
   <artifactId>javazoom.jlayer</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.6</version>
 
   <name>Javazoom :: JLayer</name>
 
   <properties>
-    <origin.groupId>javazoom</origin.groupId>
+    <origin.groupId>com.github.umjammer</origin.groupId>
     <origin.artifactId>jlayer</origin.artifactId>
   </properties>
 
